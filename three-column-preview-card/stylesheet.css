@@ -40,6 +40,63 @@ p, h1, h2, h3, h4, h5, h6 {
 	--fw-bold: 700;
 }
 
+/* 1.1 Styling */
 body {
-	font: .937 var(--ff-primary);
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-netutal);
+	font-size: .937;
+}
+
+/* 1.2 Layout */
+body {
+	display: grid;
+	place-content: center;
+}
+
+/* 2. SPECIFIC */
+/* Styling */
+.card {
+	border-radius: .5rem;
+	overflow: hidden;
+}
+
+.card__section:nth-child(1) {
+	background-color: var(--color-primary-400);
+}
+
+.card__section:nth-child(2) {
+	background-color: var(--color-secondary-700);
+}
+
+.card__section:nth-child(3) {
+	background-color: var(--color-trietary-800);
+}
+
+.card__section__title {
+	text-transform: uppercase;
+	font-family: var(--ff-secondary);
+	font-size: 2.5rem;
+	color: var(--color-netural-200);
+}
+
+.card__section__paragraph {
+	color: var(--color-netural-100-75);
+}
+
+.card__learn-more-button {
+	border: 0;
+	border-radius: 1rem;
+	background-color: var(--color-netural-200);
+}
+
+.card__learn-more-button--primary {
+	color: var(--color-primary-400);
+}
+
+.card__learn-more-button--secondary {
+	color: var(--color-secondary-700);
+}
+
+.card__learn-more-button--trietary {
+	color: var(--color-trietary-800);
 }
