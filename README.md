@@ -25,7 +25,7 @@ So my tools are:
 | :white_check_mark: [Order Summary Card](https://dalebezolli.github.io/frontendmentor.io/order-summary-card/index.html) | :black_square_button: Notifications page | :black_square_button: Launch countdown timer | |
 | :white_check_mark: [Status Preview Card](https://dalebezolli.github.io/frontendmentor.io/stats-preview-card/index.html) | :black_square_button: Interactive pricing component | :black_square_button: Multi-step form | |
 | :white_check_mark: [Three Column Preview Card](https://dalebezolli.github.io/frontendmentor.io/three-column-preview-card/index.html) | :black_square_button: Time tracking dashboard | :black_square_button: Interactive comments section | |
-| :black_square_button: Article preview component | :black_square_button: Tip calculator app | :black_square_button: E-commerce product page | |
+| :white_check_mark: [Article preview component](https://dalebezolli.github.io/frontendmentor.io/article-preview-component/index.html) | :black_square_button: Tip calculator app | :black_square_button: E-commerce product page | |
 | :black_square_button: Profile card component | :black_square_button: Intro section with dropdown navigation | :black_square_button: Calculator app | |
 | :black_square_button: FAQ accordion card | :black_square_button: News homepage | :black_square_button: Room homepage | |
 | :black_square_button: Single price grid component | :black_square_button: Interactive card details form | :black_square_button: Chat app CSS illustration | |
