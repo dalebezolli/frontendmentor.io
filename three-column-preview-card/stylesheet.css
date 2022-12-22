@@ -1,0 +1,45 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100vh;
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+button, input, textarea, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* 1. GENERAL */
+:root {
+	--color-primary-400: hsl(31, 77%, 52%);
+	--color-secondary-700: hsl(184, 100%, 22%);
+	--color-trietary-800: hsl(179, 100%, 13%);
+
+	--color-netural-100-75: hsla(0, 0%, 100%, 0.75);
+	--color-netural-200: hsl(0, 0%, 95%);
+
+	--ff-primary: 'Lexend Deca', sans-serif;
+	--ff-secondary: 'Big Shoulders Display', sans-serif;
+
+	--fw-netutal: 400;
+	--fw-bold: 700;
+}
+
+body {
+	font: .937 var(--ff-primary);
+}
