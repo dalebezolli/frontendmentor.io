@@ -1,0 +1,47 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img, svg, picture, video {
+	display: block;
+	max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+/* 1. GENERAl */
+:root {
+	--color-netural-100: hsl(210, 46%, 95%);
+	--color-netural-200: hsl(212, 23%, 69%);
+	--color-netural-400: hsl(214, 17%, 51%);
+	--color-netural-600: hsl(217, 19%, 35%);
+
+	--ff-primary: 'Manrope', sans-serif;
+
+	--fw-netural: 500;
+	--fw-bold: 700;
+}
+
+/* 1.1 Styling */
+body {
+	font-family: var(--ff-primary);
+	font-size: .8125rem;
+}
