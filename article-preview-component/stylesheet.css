@@ -65,9 +65,10 @@ main {
 /* 2. SPECIFIC */
 /* 2.1 Styling */
 .article-showcase {
-	background-color: #ffffff;
 	border-radius: .5rem;
 	overflow: hidden;
+	background-color: #ffffff;
+	box-shadow: 0 8px 32px -20px var(--color-netural-400);
 }
 
 @media (min-width: 700px) {
@@ -146,6 +147,7 @@ main {
 
 .article-showcase__share-container {
 	background-color: var(--color-netural-600);
+	box-shadow: 0 8px 32px -8px var(--color-netural-400);
 }
 
 @media (min-width: 700px) {
