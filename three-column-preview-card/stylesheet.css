@@ -147,6 +147,12 @@ main {
 	margin-bottom: 1.25rem;
 }
 
+@media (min-width: 900px) {
+	.card__section__paragraph {
+		margin-bottom: 4rem;
+	}
+}
+
 .card__learn-more-button {
 	padding: .625rem 2rem;
 }
