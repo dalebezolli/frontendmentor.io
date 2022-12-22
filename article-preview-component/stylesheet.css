@@ -117,7 +117,7 @@ main {
 	cursor: pointer;
 }
 
-.share-button:where(:hover, :focus) {
+.share-button:where(:hover, :focus, [data-open="true"]) {
 	background-color: var(--color-netural-400);
 }
 
@@ -133,7 +133,7 @@ main {
 	fill: var(--color-netural-400);
 }
 
-.share-button:where(:hover, :focus) .share-button__icon {
+.share-button:where(:hover, :focus, [data-open="true"]) .share-button__icon {
 	fill: var(--color-netural-100);
 }
 
