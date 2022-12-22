@@ -44,4 +44,40 @@ button, input, select, textarea {
 body {
 	font-family: var(--ff-primary);
 	font-size: .8125rem;
+	color: var(--color-netural-400);
+}
+
+h1, h2, h3 {
+	font-size: 1rem;
+	color: var(--color-netural-600);
+}
+
+/* 2. SPECIFIC */
+/* 2.1 Styling */
+.article-showcase__credits-container {
+	display: flex;
+	justify-content: space-between;
+}
+
+.article-showcase__credits-avatar {
+	width: 2.375rem;
+	border-radius: 100%;
+}
+
+.article-showcase__share-container_disabled {
+	display: none;
+}
+
+.article-showcase__share-button {
+	border: 0;
+}
+
+/* 3. UTILITY */
+.highlight {
+	font-weight: var(--fw-bold);
+	color: var(--color-netural-600);
+}
+
+.flex {
+	display: flex;
 }
