@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Dale Bezolli | FrontendMentor Challenges</title>
+</head>
+<body>
+	
+	<main>
+
+		<article id="challenges">
+			<h1>FrontendMentor Challenges</h1>
+		</article>
+
+	</main>
+
+	<script>
+		const challengesContainer = document.querySelector('#challenges');
+
+		const list = {
+			'Newbie' : [
+				'product-card', 
+				'rating-card',
+				'qr-code-card',
+				'nft-preview-card',
+				'order-summary-card',
+				'stats-preview-card',
+			],
+		};
+
+		for(let key of Object.keys(list)) {
+			const challengeSection = document.createElement('section');
+			const challengeSectionTitle = document.createElement('h2');
+			challengeSectionTitle.textContent = key;
+			const challengeList = document.createElement('ul');
+
+			challengeSection.appendChild(challengeSectionTitle);
+			challengeSection.appendChild(challengeList);
+			
+			for(let item of list[key]) {
+				const challengeListItem = document.createElement('li');
+				const challengeLink = document.createElement('a');
+				challengeLink.href = `${item}\\index.html`;
+				challengeLink.textContent = item;
+
+				challengeListItem.appendChild(challengeLink);
+				challengeList.appendChild(challengeListItem);
+			}
+
+			challengesContainer.appendChild(challengeSection);
+		}
+
+		
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	
+	<title>Frontend Mentor | Product preview card component</title>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;700&display=swap');   
+		@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&display=swap');   
+
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}   
+
+		.attribution { font-size: 11px; text-align: center; }
+		.attribution a { color: hsl(228, 45%, 44%); }
+
+		:root {
+			--very-dark-blue: hsl(212, 21%, 14%);
+			--dark-greyish-blue: hsl(228, 12%, 48%);
+			--darker-cyan: hsl(158, 36%, 17%);
+			--dark-cyan: hsl(158, 36%, 37%);
+			--cream: hsl(30, 38%, 92%);
+			--white: hsl(0, 0%, 100%);
+		}
+
+		body {
+			display: grid;
+			place-items: center;
+
+			min-height: 100vh;
+
+			background-color: var(--cream);
+		}   
+
+		body, button {
+			font-family: 'Montserrat', sans-serif;
+			font-size: 14px;
+			color: var(--dark-greyish-blue);
+		}
+
+		@media (max-width: 600px) {
+			body {
+				margin: 16px;
+			}
+		}
+
+		/* HELPERS */
+		.margin-bottom-1 {
+			margin-bottom: 18px;
+		}
+		.margin-bottom-2 {
+			margin-bottom: 24px;
+		}
+
+		.font-2 {
+			font-family: 'Fraunces', serif;
+		}
+
+		/* Product Card */
+		.product-card {
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+
+			max-width: 600px;
+
+			border-radius: 8px;
+			overflow: hidden;
+
+			background-color: var(--white);
+		}
+
+		@media (max-width: 600px) {
+			.product-card {
+				grid-template-columns: 1fr;
+			}
+		}
+
+		.product-image {
+			display: block;
+			max-width: 100%;
+		}
+
+		.product-info {
+			padding: 32px;
+		}
+
+		@media (max-width: 600px) {
+			.product-info {
+				padding: 24px;
+			}
+		}
+
+		.product-type {
+			text-transform: uppercase;
+			font-weight: 500;
+			font-size: 0.8em;
+			letter-spacing: 0.5em;
+		}
+
+		.product-title {
+			font-size: 2.25em;
+			line-height: 1em;
+
+			color: var(--very-dark-blue);
+		}
+
+		.product-summary {
+			line-height: 1.8em;
+		}	
+
+		.product-price {
+			display: inline-block;
+			margin-right: 16px;
+
+			font-size: 2.25em;
+		
+			color: var(--dark-cyan);
+		}
+
+		.product-old-price {
+			display: inline-block;
+			transform: translatey(-0.5em);
+
+			font-size: 0.9em;		
+		}
+
+		button.add-to-cart {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			gap: 8px;
+
+			width: 100%;
+			padding: 1em 0;
+
+			border: 0;
+			border-radius: 8px;
+			
+			font-weight: 700;
+
+			background-color: var(--dark-cyan);
+			color: var(--white);
+
+			cursor: pointer;
+		}
+
+		button.add-to-cart:where(:hover, :focus) {
+			background-color: var(--darker-cyan);
+		}
+	</style>
+</head>
+<body>
+
+	<main>
+		<article class="product-card">
+			<picture>
+				<source media="(max-width: 600px)" srcset="images/image-product-mobile.jpg">
+				<img class="product-image" src="images/image-product-desktop.jpg" alt="Product">
+			</picture>
+
+			<section class="product-info">
+				<p class="product-type margin-bottom-1">Perfume</p>
+
+				<h1 class="product-title margin-bottom-2 font-2">Gabrielle Essence Eau De Parfum</h2>
+
+				<p class="product-summary margin-bottom-2">
+					A floral, solar and voluptuous interpretation composed by Olivier Polge, 
+					Perfumer-Creator for the House of CHANEL.
+				</p>
+
+				<p class="product-price margin-bottom-2 font-2">$149.99</p>
+				<p class="product-old-price"><del>$169.99</del></p>
+
+				<button class="add-to-cart">
+					<img src="./images/icon-cart.svg" alt="Cart">
+					Add to Cart
+				</button>
+			</section>
+		</article>
+	</main>
+
+
+	<footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="https://github.com/dalebezolli">Dale Bezolli</a>.
+		</div>
+	</footer>
+</body>
+</html>

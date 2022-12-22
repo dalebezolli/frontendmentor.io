@@ -1,0 +1,257 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+
+* {
+	margin: 0;
+}
+
+html, body {
+	height: 100%;
+}
+
+body {
+	line-height: 1.5;
+	-webkit-font-smoothing: antialiased;
+}
+
+img, picture, svg, video, canvas {
+	display: block;
+	max-width: 100%;
+}
+
+input, button, textarea, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* General styles */
+:root {
+	--color-primary: hsl(25, 97%, 53%);
+	--color-netural-100: hsl(0, 0%, 100%);
+	--color-netural-300: hsl(217, 12%, 63%);
+	--color-netural-300-20: hsl(217, 12%, 63%, 10%);
+	--color-netural-400: hsl(216, 12%, 54%);
+	--color-netural-800: hsl(213, 19%, 18%);
+	--color-netural-800-400: hsl(213, 49%, 18%);
+	--color-netural-900: hsl(216, 12%, 8%);
+
+	--ff-primary: 'Overpass', sans-serif;
+
+	--fw-regular: 400;
+	--fw-bold: 700;
+
+	--icon-size: 2.5rem;
+
+	--spacing-very-small: 0.5rem;
+	--spacing-small: 1rem;
+	--spacing-normal: 1.5rem;
+	--spacing-medium: 2rem;
+}
+
+@media (min-width: 410px) {
+	:root {
+		--icon-size: 3rem;
+	}
+}
+
+body {
+	display: grid;
+	place-items: center;
+	padding: var(--spacing-normal);
+
+	font-size: 0.875rem;
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-regular);
+
+	background-color: var(--color-netural-900);
+	color: var(--color-netural-300);
+}
+
+@media (min-width: 410px) {
+	body {
+		line-height: 1.75;
+		font-size: 0.9375rem;
+	}
+}
+
+
+h1, h2, h3 {
+	font-weight: var(--fw-bold);
+	color: var(--color-netural-100);
+}
+
+.button {
+	padding-block: 0.75rem;
+
+	border: 0;
+	border-radius: var(--spacing-normal);
+
+	text-align: center;
+	font-size: .875rem;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	background-color: var(--color-primary);
+	color: var(--color-netural-100);
+
+	cursor: pointer;
+}
+
+.button:where(:hover, :focus) {
+	outline: 0;
+	background-color: var(--color-netural-100);
+	color: var(--color-primary);
+}
+
+/* Specific */
+.rating-card {
+	max-width: 410px;
+	padding: var(--spacing-normal);
+	padding-bottom: var(--spacing-medium);
+
+	border-radius: 1rem;
+
+	background: radial-gradient(circle at top center, rgba(37,45,55,.8) 0%, rgba(23,30,40,1) 75%);
+}
+
+@media (min-width: 410px) {
+	.rating-card {
+		padding: var(--spacing-medium);
+		border-radius: 2rem;
+	}
+}
+
+.rating-details {
+	display: grid;
+}
+
+.icon-box {
+	display: inline-grid;
+	place-items: center;
+	margin-bottom: var(--spacing-small);
+
+	width: var(--icon-size);
+	height: var(--icon-size);
+
+	border-radius: 100%;
+	background-color: var(--color-netural-300-20);
+}
+
+.icon-box img {
+	width: .875rem;
+}
+
+@media (min-width: 410px) {
+	.icon-box {
+		margin-bottom: var(--spacing-medium);
+	}
+
+	.icon-box img {
+		width: 1rem;
+	}
+}
+
+.rating-title {
+	margin-bottom: var(--spacing-very-small);
+	font-size: 1.5rem;
+	font-weight: var(--fw-regular);
+}
+
+@media (min-width: 410px) {
+	.rating-title {
+		font-size: 1.75rem;
+		font-weight: var(--fw-bold);
+	}
+}
+
+.rating-details p {
+	margin-bottom: var(--spacing-normal);
+}
+
+.rating-form {
+	display: grid;
+}
+
+.rating-radios {
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: var(--spacing-normal);
+	border: 0;
+}
+
+.rating-label {
+	position: relative;
+	display: grid;
+	place-items: center;
+
+	width: var(--icon-size);
+	height: var(--icon-size);
+	padding-top: 2px;
+
+	border-radius: 100%;
+	background-color: var(--color-netural-300-20);
+
+	cursor: pointer;
+}
+
+.rating-radios input[type="radio"] {
+	position: absolute;
+	opacity: 0;
+}
+
+.rating-radios input[type="radio"]:hover + .rating-label {
+	color: var(--color-netural-100);
+	background-color: var(--color-primary);
+}
+
+.rating-radios input[type="radio"]:checked + .rating-label {
+	color: var(--color-netural-100);
+	background-color: var(--color-netural-300);
+}
+
+/* Thank you details */
+.thank-you-details {
+	display: grid;
+	place-items: center;
+}
+
+.img-thank-you {
+	width: 150px;
+	margin-block: var(--spacing-very-small) var(--spacing-normal);
+}
+
+@media (min-width: 410px) {
+	.img-thank-you {
+		width: auto;
+	}
+}
+
+.thank-you-details .thank-you-text {
+	margin-bottom: var(--spacing-very-small);
+}
+
+.rating-selection {
+	margin-bottom: var(--spacing-normal);
+}
+
+/* Utility */
+.hidden {
+	display: none;
+}
+
+.center {
+	text-align: center;
+}
+
+.badge {
+	padding: 8px 10px 6px 10px;
+	border-radius: var(--spacing-medium);
+
+	background-color: var(--color-netural-300-20);
+	color: var(--color-primary);
+}

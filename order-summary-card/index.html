@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	
+	<title>Frontend Mentor | Order summary card</title>
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet"> 
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="stylesheet.css">
+	<style>
+		.attribution { font-size: 11px; text-align: center; margin-top: 3rem; }
+		.attribution a { color: hsl(228, 45%, 44%); }
+	</style>
+</head>
+<body>
+	<main>
+		<picture class="background-image">
+			<source media="(min-width: 376px)" srcset="./images/pattern-background-desktop.svg">
+			<img src="./images/pattern-background-mobile.svg" alt="background pattern">
+		</picture>
+
+		<article class="order-summary">
+			<img src="./images/illustration-hero.svg" alt="person listening to music illustration">	
+
+			<div class="order-summary-details">
+				<h1 class="order-summary-title">Order Summary</h1>
+				<p>
+					You can now listen to millions of songs, audiobooks, and podcasts on any 
+					device anywhere you like!
+				</p>
+
+				<div class="order-summary-plan">
+					<div class="order-summary-plan-details">
+						<img src="./images/icon-music.svg" alt="note">
+						<div>
+							<p class="highlight">Annual Plan</p> 
+							<p>$59.99/year</p>
+						</div>
+					</div>
+
+					<a href="">Change</a>
+				</div>
+
+				<button class="proceed-to-payment-button">Proceed to Payment</button>
+				<button data-type="secondary">Cancel Order</button>
+			</div>
+
+		</article>
+	</main> 
+	
+	<footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="https://github.com/dalebezolli/FrontendMentor-OrderSummaryCard">Dale Bezolli</a>.
+		</div>
+	</footer>
+
+</body>
+</html>

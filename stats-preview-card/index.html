@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	
+	<title>Frontend Mentor | Stats preview card component</title>
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap" rel="stylesheet">
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="stylesheet.css">
+	<style>
+		.attribution { font-size: 11px; text-align: center; }
+		.attribution a { color: hsl(228, 45%, 44%); }
+	</style>
+</head>
+<body>
+
+	<main>
+		<article class="stats-preview-card">
+			<div class="overlay">
+				<picture>
+					<source media="(min-width: 950px)" srcset="./images/image-header-desktop.jpg">
+					<img aria-hidden="true" src="./images/image-header-mobile.jpg">
+				</picture>
+			</div>
+			
+			<div class="stats-preview-card-details">
+				<h1>Get <span class="highlight-primary">insights</span> that help your business grow.</h1>
+
+				<p>
+					Discover the benefits of data analytics and make better decisions regarding revenue, customer 
+					experience, and overall efficiency.
+				</p>
+
+				<ul class="statistic-showcase">
+					<li>
+						10k+ <span class="showcase-label uppercase">companies</span>
+					</li>
+					<li>
+						314 <span class="showcase-label uppercase">templates</span>
+					</li>
+					<li class="uppercase">
+						12m+ <span class="showcase-label">queries</span>
+					</li> 
+				</ul>
+			</div>
+		</article>
+	</main>
+
+	<footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="https://github.com/dalebezolli">Dale Bezolli</a>.
+		</div>
+	</footer>
+</body>
+</html>
