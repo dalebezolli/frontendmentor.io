@@ -76,6 +76,12 @@ main {
 	object-fit: cover;
 }
 
+@media (min-width: 700px) { 
+	.article-showcase__title {
+		font-size: 1.25rem;
+	}
+}
+
 .article-showcase__credits-avatar {
 	width: 2.375rem;
 	height: 2.375rem;
@@ -124,7 +130,26 @@ main {
 /* 2.2 Layout */
 .article-showcase {
 	position: relative;
-	max-width: 375px;
+	max-width: 327px;
+}
+
+@media (min-width: 700px) {
+	.article-showcase {
+		max-width: 730px;
+		display: grid;
+		grid-template-columns: .66fr 1fr;
+	}
+}
+
+@media (min-width: 700px) {
+	.article-showcase__image {
+		height: 100%;
+	}
+}
+
+.article-showcase__content-container {
+	display: grid;
+	place-content: center;
 }
 
 .article-showcase__content {
