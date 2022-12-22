@@ -116,16 +116,32 @@ main {
 	cursor: pointer;
 }
 
+.share-button:where(:hover, :focus) {
+	background-color: var(--color-netural-400);
+}
+
 .share-button_inverted {
 	background-color: var(--color-netural-400);
+}
+
+.share-button_inverted:where(:hover, :focus) {
+	background-color: var(--color-netural-100);
 }
 
 .share-button__icon {
 	fill: var(--color-netural-400);
 }
 
+.share-button:where(:hover, :focus) .share-button__icon {
+	fill: var(--color-netural-100);
+}
+
 .share-button__icon_inverted {
 	fill: var(--color-netural-100);
+}
+
+.share-button:where(:hover, :focus) .share-button__icon_inverted {
+	fill: var(--color-netural-400);
 }
 
 .article-showcase__share-container {
