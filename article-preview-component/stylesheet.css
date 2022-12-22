@@ -70,6 +70,17 @@ main {
 	overflow: hidden;
 }
 
+@media (min-width: 700px) {
+	.article-showcase {
+		overflow: visible;
+	}
+
+	.article-showcase__image-container {
+		border-radius: .5rem 0 0 .5rem;
+		overflow: hidden;
+	}
+}
+
 .article-showcase__image {
 	width: 100%;
 	height: 200px;
@@ -121,6 +132,24 @@ main {
 	background-color: var(--color-netural-600);
 }
 
+@media (min-width: 700px) {
+	.article-showcase__share-container .share-button {
+		display: none;
+	}
+
+	.article-showcase__triangle {
+		position: absolute;
+		left: calc(var(--container-width) / 2 - 12px);
+		bottom: -24px;
+		width: 0;
+		height: 0;
+
+		border: 12px solid var(--color-netural-600);
+		border-inline-color: transparent;
+		border-bottom-color: transparent;
+	}
+}
+
 .article-showcase__share-text {
 	text-transform: uppercase;
 	letter-spacing: .625ch;
@@ -137,7 +166,7 @@ main {
 	.article-showcase {
 		max-width: 730px;
 		display: grid;
-		grid-template-columns: .66fr 1fr;
+		grid-template-columns: .64fr 1fr;
 	}
 }
 
@@ -148,6 +177,7 @@ main {
 }
 
 .article-showcase__content-container {
+	position: relative;
 	display: grid;
 	place-content: center;
 }
@@ -165,6 +195,18 @@ main {
 	padding-bottom: 1rem;
 }
 
+@media (min-width: 700px) {
+	.article-showcase__content {
+		padding: 2.5rem;
+		padding-bottom: 1rem;
+	}
+
+	.article-showcase__credits-container {
+		margin-inline: 2.5rem;
+		padding-bottom: 2.5rem;
+	}
+}
+
 .article-showcase__title {
 	margin-bottom: .75rem;
 }
@@ -179,11 +221,13 @@ main {
 }
 
 .article-showcase__share-container {
+	--container-width: 100%;
+
 	z-index: 10;
 	position: absolute;
 	bottom: 0;
 
-	width: 100%;
+	width: var(--container-width);
 	height: 64px;
 
 	display: flex;
@@ -191,6 +235,20 @@ main {
 	align-items: center;
 
 	padding-inline: 2rem;
+}
+
+@media (min-width: 700px) {
+	.article-showcase__share-container {
+		overflow: visible;
+		position: absolute;
+		right: calc(3.5rem - (var(--container-width) / 2));
+		bottom: 6.825rem;
+
+		--container-width: 250px;
+		height: 56px;
+
+		border-radius: .5rem;
+	}
 }
 
 .article-showcase__share-text {
