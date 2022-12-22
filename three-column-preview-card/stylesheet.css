@@ -88,9 +88,15 @@ main {
 }
 
 .card__learn-more-button {
-	border: 0;
+	border: 2px solid var(--color-netural-200);
 	border-radius: 2rem;
 	background-color: var(--color-netural-200);
+
+	cursor: pointer;
+}
+
+.card__learn-more-button:where(:hover, :focus) {
+	background-color: transparent;
 }
 
 .card__learn-more-button--primary {
@@ -103,6 +109,12 @@ main {
 
 .card__learn-more-button--trietary {
 	color: var(--color-trietary-800);
+}
+
+.card__learn-more-button--primary:where(:hover, :focus),
+.card__learn-more-button--secondary:where(:hover, :focus),
+.card__learn-more-button--trietary:where(:hover, :focus) {
+	color: var(--color-netural-200);
 }
 
 /* 2.2 Layout */
