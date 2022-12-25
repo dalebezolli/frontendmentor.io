@@ -55,12 +55,11 @@ h1, h2, h3 {
 
 /* 1.2 Layout */
 main {
-	min-height: 100vh;
+	min-height: 95vh;
 	display: grid;
 	place-content: center;
 	padding: 1.5rem;
 }
-
 
 /* 2. SPECIFIC */
 /* 2.1 Styling */
@@ -153,4 +152,26 @@ main {
 .profile-card__stat {
 	display: flex;
 	flex-direction: column;
+}
+
+.bg-pattern {
+	z-index: -10;
+	position: absolute;
+	background-repeat: no-repeat;
+	background-size: min(150vw, 978px);
+	width:  min(80vw, 489px);
+	height: min(80vw, 489px);
+}
+
+.bg-pattern-top {
+	background-image: url(./images/bg-pattern-top.svg);
+	background-position: bottom right;
+	top: 0px;
+	left: 0px;
+}
+
+.bg-pattern-bottom {
+	background-image: url(./images/bg-pattern-bottom.svg);
+	bottom: 0px;
+	right: 0px;
 }
