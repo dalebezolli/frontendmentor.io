@@ -6,7 +6,7 @@
 }
 
 html, body {
-	min-width: 100%;
+	min-height: 100%;
 }
 
 body {
@@ -28,7 +28,8 @@ p, h1, h2, h3, h4, h5, h6 {
 
 /* 1. GENERAl */
 :root {
-	--color-primary: hsl(185, 75%, 39%);
+	--color-primary-400: hsl(185, 75%, 39%);
+
 	--color-netural-500: hsl(227, 10%, 46%);
 	--color-netural-500-20: hsla(227, 10%, 46%, .2);
 	--color-netural-800: hsl(229, 23%, 23%);
@@ -39,15 +40,25 @@ p, h1, h2, h3, h4, h5, h6 {
 	--fw-bold: 700;
 }
 
-/* 1.1 STYLING */
+/* 1.1 Styling */
 body {
 	font-family: var(--ff-primary);
+	font-size: .875rem;
 	color: var(--color-netural-500);
-	/* font-size: 1rem; */
+
+	background-color: var(--color-primary-400);
 }
 
 h1, h2, h3 {
 	color: var(--color-netural-800);
+}
+
+/* 1.2 Layout */
+main {
+	min-height: 100vh;
+	display: grid;
+	place-content: center;
+	padding: 1.5rem;
 }
 
 
@@ -55,20 +66,23 @@ h1, h2, h3 {
 /* 2.1 Styling */
 .profile-card {
 	--heading-size: 1.2em;
+	--profile-banner-height: 138px;
+
+	overflow: hidden;
+
+	border-radius: .75rem;
+	background-color: #ffffff;
 }
 
 .profile-card__banner {
-	background-image: url(./images/bg-pattern-card.svg);
-	background-repeat: no-repeat;
-	background-size: contain;
-	width: 100%;
-	height: 150px;
+	object-fit: cover;
+	height: var(--profile-banner-height);
 }
 
 .profile-card__user-image-container {
 	width: fit-content;
 	padding: .375rem;
-	background-color: white;
+	background-color: #ffffff;
 	border-radius: 100%;
 }
 
@@ -97,8 +111,46 @@ h1, h2, h3 {
 }
 
 .profile-card__stat-title {
-	font-size: .5em;
+	font-size: .5625em;
 	font-weight: initial;
 	letter-spacing: .2ch;
 	color: var(--color-netural-500);
+}
+
+/* 2.2 Layout */
+.profile-card {
+	position: relative;
+	max-width: 375px;
+
+	text-align: center;
+}
+
+.profile-card__user-image-container {
+	position: absolute;
+	top: calc(var(--profile-banner-height) - 96px/2 - .375rem);
+	left: calc(50% - 96px/2 - .375rem);
+}
+
+.profile-card__details {
+	margin-top: 4.5rem;
+}
+
+.profile-card__user-name {
+	margin-right: .25rem;
+}
+
+.profile-card__user-location {
+	margin-top: .375rem;
+}
+
+.profile-card__user-stats {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 1.5rem;
+	padding: 1.25rem 2.5rem 1.5rem 2.5rem;
+}
+
+.profile-card__stat {
+	display: flex;
+	flex-direction: column;
 }
