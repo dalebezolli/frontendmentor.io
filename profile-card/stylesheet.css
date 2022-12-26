@@ -155,23 +155,7 @@ main {
 }
 
 .bg-pattern {
-	z-index: -10;
-	position: absolute;
+	background-image: url(./images/bg-pattern-top.svg), url(./images/bg-pattern-bottom.svg);
 	background-repeat: no-repeat;
-	background-size: min(150vw, 978px);
-	width:  min(80vw, 489px);
-	height: min(80vw, 489px);
-}
-
-.bg-pattern-top {
-	background-image: url(./images/bg-pattern-top.svg);
-	background-position: bottom right;
-	top: 0px;
-	left: 0px;
-}
-
-.bg-pattern-bottom {
-	background-image: url(./images/bg-pattern-bottom.svg);
-	bottom: 0px;
-	right: 0px;
+	background-position: bottom calc(40vh) right calc(50vw + 10%), top calc(40vh) left calc(50vw + 10%);
 }
