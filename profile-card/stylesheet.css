@@ -71,6 +71,7 @@ main {
 
 	border-radius: .75rem;
 	background-color: #ffffff;
+	box-shadow: 0px 8px 30px -16px var(--color-netural-800);
 }
 
 .profile-card__banner {
