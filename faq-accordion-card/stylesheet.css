@@ -60,12 +60,19 @@ h1 {
 }
 
 details {
+    padding-bottom: 1rem;
     border-bottom: 1.5px solid var(--color-netural-100);
+
+    font-size: .875em;
+    color: var(--color-netural-400);
 }
 
 summary {
-    padding-block: 1rem;
+    padding-top: 1rem;
     list-style: none;
+
+    font-size: .875rem;
+    color: var(--color-netural-500);
 
     cursor: pointer;
 }
@@ -77,6 +84,8 @@ summary img {
 }
 
 details[open] summary {
+    padding-bottom: .5rem;
+
     font-weight: var(--fw-bold);
     color: var(--color-netural-700);
 }
@@ -85,8 +94,48 @@ details[open] summary img {
     transform: rotate(180deg);
 }
 
+/* 1.2 LAYOUT */
+main {
+    height: 95vh;
+    padding: 1.5rem;
+}
+
+summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* 2. SPECIFIC */
 /* 2.1 STYLING */
 .faq {
+    --padding-inline: 1.5rem;
+    margin-top: 7.75rem;
+    padding: 6rem var(--padding-inline) 3.5rem var(--padding-inline);
     background-color: #ffffff;
+    border-radius: 1.5rem;
+
+    overflow: visible;
+}
+
+/* 2.2 LAYOUT */
+.faq {
+    position: relative;
+}
+
+.illustration {
+    position: absolute;
+    top: 0;
+    left: calc(50vw - 120px - var(--padding-inline));
+}
+
+.illustration__desk-mobile {
+    position: absolute;
+    top: -108px;
+    left: 0;
+}
+
+.faq__title {
+    margin-block: 2rem .5rem;
+    text-align: center;
 }
