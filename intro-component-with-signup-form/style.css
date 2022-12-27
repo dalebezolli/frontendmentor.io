@@ -1,0 +1,43 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img, picture, svg, video {
+	max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+/* 1. GENERAL */
+:root {
+	--color-primary-1: hsl(0, 100%, 74%);
+	--color-primary-2: hsl(154, 59%, 51%);
+	--color-accent: hsl(248, 32%, 49%);
+
+	--color-netural-300: hsl(246, 25%, 77%);
+	--color-netural-600: hsl(249, 10%, 26%);
+
+	--ff-primary: 'Poppins', sans-serif;
+
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-semibold: 600;
+	--fw-bold: 700;
+}
