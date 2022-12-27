@@ -70,6 +70,7 @@ button {
 
 ul {
 	list-style: none;
+	font-size: .875em;
 }
 
 /* 1.2 LAYOUT */
@@ -157,8 +158,12 @@ main {
 		grid-column: 1 / 3;
 	}
 
-	.price-grid__title {
+	h2.price-grid__title {
 		font-size: 1.25rem;
+	}
+
+	h3.price-grid__title {
+		font-size: 1rem;
 	}
 }
 
@@ -166,8 +171,12 @@ main {
 	margin-top: .5rem;
 }
 
-.price-grid__title {
+.price-grid__primary-title {
 	margin-bottom: .75rem;
+}
+
+.price-grid__secondary-list {
+	margin-top: .75rem;
 }
 
 .price-grid__button {
