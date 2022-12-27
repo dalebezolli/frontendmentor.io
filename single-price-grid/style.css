@@ -32,4 +32,77 @@ button, select, textarea, input {
 	
 	--color-netural-100: hsl(204, 43%, 93%);
 	--color-netural-200: hsl(218, 22%, 67%);
+
+	--ff-primary: 'Karla', sans-serif;
+	--fw-netural: 400;
+	--fw-bold: 700;
+}
+
+/* 1.1 STYLE */
+body {
+	font-family: var(--ff-primary);
+	font-size: .875rem;
+	color: var(--color-netural-200);
+	background-color: var(--color-netural-100);
+}
+
+h1, h2, h3 {
+	color: var(--color-primary);
+}
+
+h2 {
+	font-size: 1rem;
+}
+
+button {
+	border: 0;
+	padding: .5rem 2rem;
+
+	font-size: .75rem;
+	font-weight: var(--fw-bold);
+	color: var(--color-netural-100);
+	background-color: var(--color-secondary);
+
+	box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+}
+
+/* 2. SPECIFIC */
+/* 2.1 STYLE */
+.price-grid {
+	overflow: hidden;
+	border-radius: .5rem;
+}
+
+.price-grid__primary-container {
+	background-color: #ffffff;
+}
+
+.price-grid__secondary-container {
+	background-color: var(--color-primary);
+}
+
+.price-grid__secondary-title {
+	color: #ffffff;
+}
+
+.price-grid__secondary-paragraph,
+.price-grid__secondary-list-item {
+	color: #ffffffc0;
+}
+
+.price-grid__highlight {
+	font-weight: var(--fw-bold);
+	color: var(--color-secondary);
+}
+
+.price {
+	font-size: 1.5rem;
+	font-weight: var(--fw-bold);
+	color: #ffffff;
+}
+
+.price__unit {
+	font-size: .875rem;
+	font-weight: initial;
+	color: #ffffff80;
 }
