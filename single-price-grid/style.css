@@ -28,6 +28,7 @@ button, select, textarea, input {
 /* 1. GENERAL */
 :root {
 	--color-primary: hsl(179, 62%, 43%);
+	--color-primary-80: hsla(179, 62%, 43%, .80);
 	--color-secondary: hsl(71, 73%, 54%);
 	
 	--color-netural-100: hsl(204, 43%, 93%);
@@ -41,7 +42,7 @@ button, select, textarea, input {
 /* 1.1 STYLE */
 body {
 	font-family: var(--ff-primary);
-	font-size: .875rem;
+	font-size: .75rem;
 	color: var(--color-netural-200);
 	background-color: var(--color-netural-100);
 }
@@ -64,6 +65,15 @@ button {
 	background-color: var(--color-secondary);
 
 	box-shadow: 0 5px 20px rgba(0, 0, 0, .25);
+}
+
+ul {
+	list-style: none;
+}
+
+/* 1.2 LAYOUT */
+main {
+	padding: 1.5rem;
 }
 
 /* 2. SPECIFIC */
@@ -90,19 +100,46 @@ button {
 	color: #ffffffc0;
 }
 
+.price-grid__trietary-container {
+	background-color: var(--color-primary-80);
+}
+
 .price-grid__highlight {
 	font-weight: var(--fw-bold);
 	color: var(--color-secondary);
 }
 
 .price {
+	display: flex;
+	gap: .5rem;
+	align-items: center;
+
 	font-size: 1.5rem;
 	font-weight: var(--fw-bold);
 	color: #ffffff;
 }
 
 .price__unit {
-	font-size: .875rem;
+	font-size: .75rem;
 	font-weight: initial;
 	color: #ffffff80;
+}
+
+/* 2.2 LAYOUT */
+.price-grid__container {
+	padding: 1.25rem;
+	display: flex;
+	flex-direction: column;
+}
+
+.price-grid__primary-paragraph {
+	margin-top: .5rem;
+}
+
+.price-grid__title {
+	margin-bottom: .75rem;
+}
+
+.price-grid__button {
+	margin-top: 1.5rem;
 }
