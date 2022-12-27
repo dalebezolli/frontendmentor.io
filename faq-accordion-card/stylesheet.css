@@ -104,10 +104,15 @@ details[open] summary::after {
 /* 1.2 LAYOUT */
 main {
     min-height: 95vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    place-content: center;
     padding: 1.5rem;
+}
+
+@media (min-width: 65rem) {
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        place-content: center;
+    }
 }
 
 summary {
@@ -130,6 +135,7 @@ summary {
 /* 2.2 LAYOUT */
 .faq {
     position: relative;
+    margin-top: 7.5rem;
     margin-inline: auto;
     width: 100%;
     max-width: 30rem;
@@ -138,10 +144,11 @@ summary {
 
 @media (min-width: 65rem) {
     .faq {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        margin-top: 0;
         max-width: 60rem;
         height: 30rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
         padding: 0;
     }
 

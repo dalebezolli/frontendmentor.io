@@ -28,7 +28,7 @@ So my tools are:
 | :white_check_mark: [Article preview component](https://dalebezolli.github.io/frontendmentor.io/article-preview-component/index.html) | :black_square_button: Tip calculator app | :black_square_button: E-commerce product page | |
 | :white_check_mark: [Profile card component](https://dalebezolli.github.io/frontendmentor.io/profile-card/index.html) | :black_square_button: Intro section with dropdown navigation | :black_square_button: Calculator app | |
 | :white_check_mark: [FAQ accordion card](https://dalebezolli.github.io/frontendmentor.io/faq-accordion-card/index.html) | :black_square_button: News homepage | :black_square_button: Room homepage | |
-| :black_square_button: Single price grid component | :black_square_button: Interactive card details form | :black_square_button: Chat app CSS illustration | |
+| :black_square_button: [Single price grid component](https://dalebezolli.github.io/frontendmentor.io/single-price-grid/index.html) | :black_square_button: Interactive card details form | :black_square_button: Chat app CSS illustration | |
 | :black_square_button: Intro component with sign-up form | :black_square_button: Sunnyside agency landing page | :black_square_button: Job listings with filtering | |
 | :black_square_button: Four card feature section | :black_square_button: Blogr landing page | :black_square_button: URL shortening API landing page | |
 | :black_square_button: Base Apparel coming soon page | :black_square_button: Testimonials grid section | :black_square_button: URL shortening API landing page | |

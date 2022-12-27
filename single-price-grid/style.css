@@ -1,0 +1,35 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img, picture, video, svg {
+	max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+button, select, textarea, input {
+	font: inherit;
+}
+
+/* 1. GENERAL */
+:root {
+	--color-primary: hsl(179, 62%, 43%);
+	--color-secondary: hsl(71, 73%, 54%);
+	
+	--color-netural-100: hsl(204, 43%, 93%);
+	--color-netural-200: hsl(218, 22%, 67%);
+}
