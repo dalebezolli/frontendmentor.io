@@ -35,4 +35,58 @@ img, picture, svg, video {
     --color-netural-400: hsl(240, 6%, 50%);
     --color-netural-500: hsl(237, 12%, 33%);
     --color-netural-700: hsl(238, 29%, 16%); 
+    
+    --ff-primary: 'Kumbh Sans', sans-serif;
+
+    --fw-primary: 400;
+    --fw-bold: 700;
+}
+
+/* 1. GENERAL */
+/* 1.1 STYLING */
+body {
+    font-family: var(--ff-primary);
+    font-size: .875rem;
+    color: var(--color-netural-500);
+    background: linear-gradient(var(--color-primary), var(--color-secondary));
+}
+
+h1, h2, h3 {
+    color: var(--color-netural-700);
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+details {
+    border-bottom: 1.5px solid var(--color-netural-100);
+}
+
+summary {
+    padding-block: 1rem;
+    list-style: none;
+
+    cursor: pointer;
+}
+
+summary img {
+    width: 10px;
+    height: 7px;
+    transition: transform .1s ease;
+}
+
+details[open] summary {
+    font-weight: var(--fw-bold);
+    color: var(--color-netural-700);
+}
+
+details[open] summary img {
+    transform: rotate(180deg);
+}
+
+/* 2. SPECIFIC */
+/* 2.1 STYLING */
+.faq {
+    background-color: #ffffff;
 }
