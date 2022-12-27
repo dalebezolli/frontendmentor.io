@@ -1,0 +1,38 @@
+/* RESET */
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    min-height: 100%;
+}
+
+body {
+    line-height: 1.5;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+button, input, textarea, select {
+    font: inherit;
+}
+
+img, picture, svg, video {
+    max-width: 100%;
+}
+
+/* GENERAL */
+:root {
+    --color-primary: hsl(273, 75%, 66%);
+    --color-secondary: hsl(240, 73%, 65%);
+    --color-trietary: hsl(14, 88%, 65%);
+
+    --color-netural-100: hsl(240, 5%, 91%);
+    --color-netural-400: hsl(240, 6%, 50%);
+    --color-netural-500: hsl(237, 12%, 33%);
+    --color-netural-700: hsl(238, 29%, 16%); 
+}
