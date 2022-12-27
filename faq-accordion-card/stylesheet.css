@@ -77,9 +77,12 @@ summary {
     cursor: pointer;
 }
 
-summary img {
-    width: 10px;
-    height: 7px;
+summary:is(:hover, :focus) {
+    color: var(--color-trietary);
+}
+
+summary::after {
+    content: url("./images/icon-arrow-down.svg");
     transition: transform .1s ease;
 }
 
@@ -90,13 +93,20 @@ details[open] summary {
     color: var(--color-netural-700);
 }
 
-details[open] summary img {
+details[open] summary:hover {
+    color: var(--color-trietary);
+}
+
+details[open] summary::after {
     transform: rotate(180deg);
 }
 
 /* 1.2 LAYOUT */
 main {
     min-height: 95vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    place-content: center;
     padding: 1.5rem;
 }
 
@@ -120,8 +130,8 @@ summary {
 /* 2.2 LAYOUT */
 .faq {
     position: relative;
-    margin-top: 7.75rem;
     margin-inline: auto;
+    width: 100%;
     max-width: 30rem;
     padding: 6rem var(--padding-inline) 3.5rem var(--padding-inline);
 }
@@ -131,11 +141,13 @@ summary {
         display: grid;
         grid-template-columns: 1fr 1fr;
         max-width: 60rem;
+        height: 30rem;
         padding: 0;
     }
 
     .faq__content {
         padding: 2rem 6rem 5rem 0;
+        overflow: hidden;
     }
 }
 
