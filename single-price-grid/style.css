@@ -81,7 +81,7 @@ main {
 /* 2.1 STYLE */
 .price-grid {
 	overflow: hidden;
-	border-radius: .5rem;
+	border-radius: .25rem;
 }
 
 .price-grid__primary-container {
