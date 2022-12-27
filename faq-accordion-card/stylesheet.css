@@ -110,7 +110,11 @@ summary {
 /* 2.1 STYLING */
 .faq {
     --padding-inline: 1.5rem;
+
+    max-width: 30rem;
+
     margin-top: 7.75rem;
+    margin-inline: auto;
     padding: 6rem var(--padding-inline) 3.5rem var(--padding-inline);
     background-color: #ffffff;
     border-radius: 1.5rem;
@@ -126,7 +130,7 @@ summary {
 .illustration {
     position: absolute;
     top: 0;
-    left: calc(50vw - 120px - var(--padding-inline));
+    left: calc(50% - 120px);
 }
 
 .illustration__desk-mobile {
