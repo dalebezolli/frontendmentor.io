@@ -28,7 +28,8 @@ button, input, select, textarea {
 /* 1. GENERAL */
 :root {
 	--color-primary-1: hsl(0, 100%, 74%);
-	--color-primary-2: hsl(154, 59%, 51%);
+	--color-primary-2-400: hsl(154, 59%, 51%);
+	--color-primary-2-500: hsl(154, 59%, 41%);
 	--color-accent: hsl(248, 32%, 49%);
 
 	--color-netural-300: hsl(246, 25%, 77%);
@@ -40,4 +41,83 @@ button, input, select, textarea {
 	--fw-medium: 500;
 	--fw-semibold: 600;
 	--fw-bold: 700;
+}
+
+/* 1.1 STYLING */
+body {
+	font-family: var(--ff-primary);
+	color: #d2d2d2;
+	font-size: .75rem;
+	font-weight: var(--fw-medium);
+}
+
+main {
+	background: var(--color-primary-1) url('./images/bg-intro-mobile.png');
+}
+
+h1, h2, h3 {
+	color: #ffffff;
+}
+
+input:where([type='text'], [type='email'], [type='password']) {
+	border: 1px solid #d2d2d2;
+	border-radius: .25rem;
+}
+
+input:where([type='text'], [type='email'], [type='password'])::placeholder {
+	font-size: .875em;
+	font-weight: var(--fw-semibold);
+}
+
+input[type='submit'] {
+	text-transform: uppercase;
+	font-size: .875em;
+	font-weight: var(--fw-semibold);
+	letter-spacing: .1ch;
+	color: #d2d2d2;
+
+	background-color: var(--color-primary-2-400);
+	border: 0;
+	border-radius: .25rem;
+
+	box-shadow: 0 4px var(--color-primary-2-500);
+}
+
+/* 1.2 LAYOUT */
+main {
+	min-height: 95vh;
+}
+
+/* 2. SPECIFIC */
+/* 2.1 STYLING */
+.title-trial {
+	font-size: .75rem;
+	font-weight: var(--fw-regular);
+	color: #d2d2d2;
+
+	border-radius: .5rem;
+	background-color: var(--color-accent);
+
+	box-shadow: 0px 6px 0px rgb(0, 0, 0, .25);
+}
+
+.title-trial__highlight {
+	font-weight: var(--fw-bold);
+	color: #ffffff;
+}
+
+.form-section {
+	border-radius: .5rem;
+	background-color: #ffffff;
+
+	box-shadow: 0px 6px 0px rgb(0, 0, 0, .25);
+}
+
+.tos {
+	font-size: .875em;
+}
+
+.tos__link {
+	text-decoration: none;
+	color: var(--color-primary-1);
 }
