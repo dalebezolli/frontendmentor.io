@@ -10,11 +10,16 @@ html, body {
 }
 
 body {
-	line-height: 1.5;
+	line-height: 1.7;
 }
 
 img, picture, svg, video {
+	display: block;
 	max-width: 100%;
+}
+
+input {
+	width: 100%;
 }
 
 p, h1, h2, h3, h4, h5, h6 {
@@ -46,12 +51,9 @@ button, input, select, textarea {
 /* 1.1 STYLING */
 body {
 	font-family: var(--ff-primary);
-	color: #d2d2d2;
-	font-size: .75rem;
 	font-weight: var(--fw-medium);
-}
+	color: #d2d2d2;
 
-main {
 	background: var(--color-primary-1) url('./images/bg-intro-mobile.png');
 }
 
@@ -59,9 +61,25 @@ h1, h2, h3 {
 	color: #ffffff;
 }
 
+h1 {
+	font-size: 1.75em;
+	line-height: 1.2;
+}
+
+@media (min-width: 60rem) {
+	h1 {
+		font-size: 3rem;
+	}
+}
+
 input:where([type='text'], [type='email'], [type='password']) {
 	border: 1px solid #d2d2d2;
 	border-radius: .25rem;
+}
+
+input:where([type='text'], [type='email'], [type='password']):where(:hover, :focus) {
+	border-color: var(--color-netural-600);
+	outline: none;
 }
 
 input:where([type='text'], [type='email'], [type='password'])::placeholder {
@@ -86,12 +104,37 @@ input[type='submit'] {
 /* 1.2 LAYOUT */
 main {
 	min-height: 95vh;
+	display: grid;
+	place-items: center;
+	grid-template-columns: 1fr;
+
+	padding: 1.5rem;
+	text-align: center;
+}
+
+@media (min-width: 60rem) {
+	main {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+input {
+	max-width: 100%;
+}
+
+input:where([type='text'], [type='email'], [type='password']) {
+	padding: .875rem 0 .875rem 1.25rem;
+}
+
+input[type='submit'] {
+	width: 100%;
+	padding: 1rem 2rem;
 }
 
 /* 2. SPECIFIC */
 /* 2.1 STYLING */
 .title-trial {
-	font-size: .75rem;
+	font-size: .875em;
 	font-weight: var(--fw-regular);
 	color: #d2d2d2;
 
@@ -114,10 +157,65 @@ main {
 }
 
 .tos {
-	font-size: .875em;
+	font-size: .625em;
 }
 
 .tos__link {
 	text-decoration: none;
+	font-weight: var(--fw-bold);
 	color: var(--color-primary-1);
+}
+
+/* 2.2 LAYOUT */
+.hero {
+	margin-top: 5rem;
+	width: 100%;
+	max-width: 32rem;
+}
+
+@media (min-width: 60rem) {
+	.hero {
+		grid-row: 1/3;
+		text-align: initial;
+	}
+}
+
+.hero__title {
+	margin-bottom: 1.25rem;
+}
+
+.hero__paragraph {
+	margin-bottom: 3.75rem;
+}
+
+.title-trial {
+	margin-bottom: 1.5rem;
+	padding: 1rem 4rem;
+	width: 100%;
+	max-width: 32rem;
+}
+
+.form-section {
+	padding: 1.5rem;
+	width: 100%;
+	max-width: 32rem;
+}
+
+@media (min-width: 60rem) {
+	.form-section {
+		grid-column: 2 / 3;
+	}
+}
+
+.form-section input {
+	margin-block: .5rem;
+}
+
+.tos {
+	margin-top: .5rem;
+	padding-inline: .5rem;
+}
+
+#first-name:not(:focus):not(:placeholder-shown):invalid {
+	border-color: red;
 }
