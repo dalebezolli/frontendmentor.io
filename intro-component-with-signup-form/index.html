@@ -31,15 +31,19 @@
 			</p>
 		</section>
 
-		<section>
+		<section class="action">
 			<h2 class="title-trial"><span class="title-trial__highlight">Try it free 7 days</span> then $20/mo. thereafter</h2>
 			
 			<div class="form-section">
-				<form onsubmit="submit(event)">
-					<input type="text" name="first-name" id="first-name" placeholder="First Name" required>
-					<input type="text" name="last-name" id="last-name" placeholder="Last Name" required>
-					<input type="email" name="email" id="email" placeholder="Email Address" required>
-					<input type="password" name="password" id="password" placeholder="Password" required>
+				<form onsubmit="validateForm(event)">
+					<input type="text" name="first-name" id="first-name" placeholder="First Name">
+					<span class="error"></span>
+					<input type="text" name="last-name" id="last-name" placeholder="Last Name">
+					<span class="error"></span>
+					<input type="text" name="email" id="email" placeholder="Email Address">
+					<span class="error"></span>
+					<input type="password" name="password" id="password" placeholder="Password">
+					<span class="error"></span>
 					<input type="submit" value="Claim your free trial">
 				</form>
 
@@ -58,13 +62,6 @@
 		</p>
 	</footer>
 
-	<script>
-		'use strict';
-		const submit = (event) => {
-			console.log(event);
-			event.preventDefault();
-			alert("hi");
-		}
-	</script>
+	<script src="./formValidation.js"></script>
 </body>
 </html>

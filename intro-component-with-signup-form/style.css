@@ -209,6 +209,20 @@ input[type='submit'] {
 	padding-inline: .5rem;
 }
 
-#first-name:not(:focus):not(:placeholder-shown):invalid {
-	border-color: red;
+.field-error {
+	border-color: var(--color-primary-1);
+	border-width: 2px;
+	background: url('./images/icon-error.svg');
+	background-repeat: no-repeat;
+	background-position: top 50% right 1.25rem;
+}
+
+.field-error + .error {
+	display: inline-block;
+	width: 100%;
+
+	text-align: right;
+	font-style: italic;
+	font-size: .625rem;
+	color: var(--color-primary-1);
 }
