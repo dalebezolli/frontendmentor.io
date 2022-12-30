@@ -99,7 +99,6 @@ h2 {
 .cards {
 	display: grid;
 	place-content: center;
-	max-width: 80rem;
 }
 
 @media (min-width: 50rem) {
