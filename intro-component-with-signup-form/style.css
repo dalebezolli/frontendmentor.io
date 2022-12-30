@@ -99,6 +99,11 @@ input[type='submit'] {
 	border-radius: .25rem;
 
 	box-shadow: 0 4px var(--color-primary-2-500);
+	cursor: pointer;
+}
+
+input[type='submit']:where(:hover, :focus) {
+	opacity: .6;
 }
 
 /* 1.2 LAYOUT */
