@@ -1,0 +1,40 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-width: 100%;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+/* GENERAL */
+:root {
+	--color-red: hsl(0, 78%, 62%);
+	--color-cyan: hsl(180, 62%, 55%);
+	--color-orange: hsl(34, 97%, 64%);
+	--color-blue: hsl(212, 86%, 64%);
+
+	--color-natural-100: hsl(0, 0%, 98%);
+	--color-natural-400: hsl(229, 6%, 66%);
+	--color-natural-700: hsl(234, 12%, 34%);
+
+	--ff-primary : 'Poppins', sans-serif;
+	--fw-light: 200;
+	--fw-regular: 400;
+	--fw-bold: 600;
+}
