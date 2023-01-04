@@ -1,0 +1,42 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	letter-spacing: 1.5;
+}
+
+img, picture, svg, video {
+	max-width: 100%;
+}
+
+button, textarea, input, select {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* 1. GENERAL */
+:root {
+	--color-magenta: hsl(300, 43%, 22%);
+	--color-pink: hsl(333, 80%, 67%);
+
+	--color-netural-100: hsl(0, 0%, 100%);
+	--color-netural-200: hsl(300, 24%, 96%);
+	--color-netural-400: hsl(303, 10%, 53%);
+
+	--ff-primary: 'League Spartan', sans-serif;
+
+	--fw-regular: 400;
+	--fw-medium: 500;
+	--fw-bold: 700;
+}

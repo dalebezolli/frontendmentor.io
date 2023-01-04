@@ -31,11 +31,11 @@ So my tools are:
 | :white_check_mark: [Single price grid component](https://dalebezolli.github.io/frontendmentor.io/single-price-grid/index.html) | :black_square_button: Interactive card details form | :black_square_button: Chat app CSS illustration | |
 | :white_check_mark: [Intro component with sign-up form](https://dalebezolli.github.io/frontendmentor.io/intro-component-with-signup-form/index.html) | :black_square_button: Sunnyside agency landing page | :black_square_button: Job listings with filtering | |
 | :white_check_mark: [Four card feature section](https://dalebezolli.github.io/frontendmentor.io/four-card-feature-section/index.html) | :black_square_button: Blogr landing page | :black_square_button: URL shortening API landing page | |
-| :black_square_button: Base Apparel coming soon page | :black_square_button: Testimonials grid section | :black_square_button: URL shortening API landing page | |
+| :black_square_button: [Social proof section](https://dalebezolli.github.io/frontendmentor.io/social-proof-section/index.html) | :black_square_button: Testimonials grid section | :black_square_button: URL shortening API landing page | |
 | :black_square_button: Huddle landing page with a single introductory section | :black_square_button: Social media dashboard with theme switcher | |
 | :black_square_button: Base Apparel coming soon page | :black_square_button: Pricing component with toggle | :black_square_button: Bookmark landing page | |
 | :black_square_button: Ping single column coming soon page | :black_square_button: Project tracking intro component | | |
-| :black_square_button: Social proof section | :black_square_button: Clipboard landing page | | |
+| | :black_square_button: Clipboard landing page | | |
 | | :black_square_button: Huddle landing page with alternating feature blocks | | |
 | | :black_square_button: Fylo dark theme landing page | | |
 | | :black_square_button: Fylo landing page with two column layout | | |
