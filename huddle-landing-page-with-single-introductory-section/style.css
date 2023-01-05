@@ -47,3 +47,13 @@ body {
 	font-family: var(--ff-primary);
 	color: var(--color-netural-100);
 }
+
+/* 2. HEADER */
+header {
+	padding-inline: 2.25rem;
+}
+
+/* 2.1 LOGO */
+.logo {
+	width: min(42.5%, 16.5rem);
+}
