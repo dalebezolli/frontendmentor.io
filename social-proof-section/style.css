@@ -44,10 +44,15 @@ p, h1, h2, h3, h4, h5, h6 {
 body {
 	font-family: var(--ff-primary);
 	font-weight: var(--fw-regular);
-	font-size: .9375rem;
+	font-size: 1.1rem;
 	color: var(--color-netural-400);
 	background-color: var(--color-netural-100);
 
+	padding: 1.5rem;
+}
+
+main {
+	text-align: center;
 }
 
 h1, h2, h3 {
@@ -55,16 +60,33 @@ h1, h2, h3 {
 }
 
 h1 {
-	font-size: 2.5em;
-	line-height: 1;
+	margin-block: 3.85rem 1.5rem;
+	font-size: 2.2em;
+	line-height: .8;
 }
 
 /* 2. SPECIFIC */
+.ratings {
+	margin-top: 2.5rem;
+}
+
 .rating {
+	margin-bottom: 1rem;
+	border-radius: .5rem;
 	background-color: var(--color-netural-200);
+	padding: 1rem .75rem .75rem .75rem;
+}
+
+.rating__stars {
+	margin-bottom: .5rem;
+}
+
+.rating__stars img {
+	margin-left: .125rem;
 }
 
 .rating p {
+	font-size: 1rem;
 	font-weight: var(--fw-bold);
 	color: var(--color-magenta);
 }
