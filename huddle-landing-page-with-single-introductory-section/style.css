@@ -104,6 +104,30 @@ header {
 	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
 }
 
+/* 4. FOOTER */
+footer {
+	margin-block: 5rem 3rem;
+	display: flex;
+	justify-content: center;
+	gap: .75rem;
+}
+
+.icon {
+	width: 2.25rem;
+	height: 2.25rem;
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	border: 1px solid var(--color-netural-100);
+	border-radius: 100%;
+}
+
+.icon:nth-child(3) {
+	font-size: 1.125em;
+}
+
 /* A. MEDIA QUERIES */
 
 /* A.1 60rem */
@@ -152,6 +176,15 @@ header {
 
 	.hero__register {
 		padding: 1rem 4.125rem;
+	}
+
+	/* A.1.4 FOOTER */
+	footer {
+		margin:auto;
+		max-width: 90rem;
+
+		justify-content: end;
+		padding-inline: 4.25rem;
 	}
 }
 
