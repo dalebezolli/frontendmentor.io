@@ -16,7 +16,7 @@ So my tools are:
 
 ## Challenges
 
-| Newbie `14/17` | Junior `0/25` | Intermediate `0/14` | Advanced `0/2` |
+| Newbie `15/17` | Junior `0/25` | Intermediate `0/14` | Advanced `0/2` |
 |:-------|:-------|:-------------|:---------|
 | :white_check_mark: [Product Card](https://dalebezolli.github.io/frontendmentor.io/product-card/index.html) | :black_square_button: Advice generator app | :black_square_button: Todo app | :black_square_button: Rock, Paper, Scissors game |
 | :white_check_mark: [Rating Card](https://dalebezolli.github.io/frontendmentor.io/rating-card/index.html) | :black_square_button: Expenses chart component | :black_square_button: Easybank landing page | :black_square_button: REST Countries API with color theme switcher |
@@ -32,7 +32,7 @@ So my tools are:
 | :white_check_mark: [Intro component with sign-up form](https://dalebezolli.github.io/frontendmentor.io/intro-component-with-signup-form/index.html) | :black_square_button: Sunnyside agency landing page | :black_square_button: Job listings with filtering | |
 | :white_check_mark: [Four card feature section](https://dalebezolli.github.io/frontendmentor.io/four-card-feature-section/index.html) | :black_square_button: Blogr landing page | :black_square_button: URL shortening API landing page | |
 | :white_check_mark: [Social proof section](https://dalebezolli.github.io/frontendmentor.io/social-proof-section/index.html) | :black_square_button: Testimonials grid section | :black_square_button: URL shortening API landing page | |
-| :black_square_button: [Huddle landing page with a single introductory section](https://dalebezolli.github.io/frontendmentor.io/huddle-landing-page-with-single-introductory-section/index.html) | :black_square_button: Social media dashboard with theme switcher | |
+| :white_check_mark: [Huddle landing page with a single introductory section](https://dalebezolli.github.io/frontendmentor.io/huddle-landing-page-with-single-introductory-section/index.html) | :black_square_button: Social media dashboard with theme switcher | |
 | :black_square_button: Base Apparel coming soon page | :black_square_button: Pricing component with toggle | :black_square_button: Bookmark landing page | |
 | :black_square_button: Ping single column coming soon page | :black_square_button: Project tracking intro component | | |
 | | :black_square_button: Clipboard landing page | | |
