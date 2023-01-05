@@ -57,12 +57,16 @@ main {
 
 @media (min-width: 70rem) {
 	body {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
 		padding-inline: 7.5rem;
 	}
 
 	main {
 		margin-block: 6rem 4rem;
 		width: 100%;
+		max-width: 70rem;
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		text-align: left;
