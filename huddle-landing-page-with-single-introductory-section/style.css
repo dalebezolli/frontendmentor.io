@@ -40,6 +40,8 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+	min-height: 100vh;
+
 	background-color: var(--color-violet);
 	background-image: url("./images/bg-mobile.svg");
 	background-repeat: no-repeat;
@@ -58,7 +60,7 @@ header {
 
 /* 2.1 LOGO */
 .logo {
-	width: clamp(7.5rem, 30%, 11.5rem);
+	width: clamp(7.5rem, 30%, 13.5rem);
 }
 
 /* 3. HERO */
@@ -159,7 +161,7 @@ footer {
 	header {
 		margin-inline: auto;
 		max-width: 90rem;
-		padding-inline: 4.25rem;
+		padding: 3rem 4.25rem;
 	}
 	
 	/* A.1.3 HERO */
@@ -201,7 +203,7 @@ footer {
 		max-width: 90rem;
 
 		justify-content: end;
-		padding-inline: 4.25rem;
+		padding: 2rem 4.25rem;
 	}
 }
 
