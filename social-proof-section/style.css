@@ -36,7 +36,56 @@ p, h1, h2, h3, h4, h5, h6 {
 
 	--ff-primary: 'League Spartan', sans-serif;
 
-	--fw-regular: 400;
-	--fw-medium: 500;
+	--fw-light: 400;
+	--fw-regular: 500;
 	--fw-bold: 700;
+}
+
+body {
+	font-family: var(--ff-primary);
+	font-weight: var(--fw-regular);
+	font-size: .9375rem;
+	color: var(--color-netural-400);
+	background-color: var(--color-netural-100);
+
+}
+
+h1, h2, h3 {
+	color: var(--color-magenta);
+}
+
+h1 {
+	font-size: 2.5em;
+	line-height: 1;
+}
+
+/* 2. SPECIFIC */
+.rating {
+	background-color: var(--color-netural-200);
+}
+
+.rating p {
+	font-weight: var(--fw-bold);
+	color: var(--color-magenta);
+}
+
+.review {
+	background-color: var(--color-magenta);
+	color: var(--color-netural-100);
+}
+
+.review__image {
+	width: 2.5rem;
+	border-radius: 100%;
+}
+
+.name {
+	font-weight: var(--fw-light);
+	color: var(--color-pink);
+}
+
+.name cite {
+	font-weight: var(--fw-bold);
+	font-style: normal;
+	color: var(--color-netural-100);
 }
