@@ -50,10 +50,108 @@ body {
 
 /* 2. HEADER */
 header {
+	padding-top: .75rem;
 	padding-inline: 2.25rem;
+	margin-bottom: 2.75rem;
 }
 
 /* 2.1 LOGO */
 .logo {
-	width: min(42.5%, 16.5rem);
+	width: clamp(7.5rem, 30%, 13.5rem);
+}
+
+/* 3. HERO */
+.hero {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	padding-inline: 2.25rem;
+	text-align: center;
+}
+
+.hero__type {
+	max-width: calc(25rem + 10%);
+}
+
+.hero__illustration {
+	margin-inline: auto;
+	margin-bottom: 3.75rem;
+	width: clamp(18.9375rem, 70%, 30rem);
+}
+
+.hero__title {
+	margin-bottom: 1rem;
+
+	font-family: var(--ff-secondary);
+	font-weight: var(--fw-bold);
+	font-size: clamp(1.5em, 5vw, 2em);
+}
+
+.hero__paragraph {
+	margin-bottom: 1rem;
+}
+
+.hero__register {
+	border: 0;
+	border-radius: 2rem;
+	padding: 1rem 4.125rem;
+
+	color: var(--color-violet);
+	font-family: var(--ff-secondary);
+
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.25);
+}
+
+/* A. MEDIA QUERIES */
+
+/* A.1 60rem */
+@media (min-width: 60rem) {
+
+	/* A.1.1 HEADER */
+	header {
+		margin-inline: auto;
+		max-width: 90rem;
+		padding-inline: 4.25rem;
+	}
+	
+	/* A.1.2 HERO */
+	.hero {
+		margin-inline: auto;
+		max-width: 90rem;
+
+		display: grid;
+		grid-template-columns: 1.1fr 1fr;
+		gap: 2.5rem;
+		align-items: start;
+		text-align: left;
+
+		padding-inline: 4.25rem;
+	}
+
+	.hero__illustration {
+		margin: 0;
+		width: auto;
+	}
+
+	.hero__type {
+		margin-bottom: 5rem;
+		max-width: initial;
+	}
+
+	.hero__title {
+		margin-bottom: 2rem;
+		max-width: 22rem;
+	}
+
+	.hero__paragraph {
+		margin-bottom: 1.5rem;
+	}
+}
+
+/* A.2 70rem */
+@media (min-width: 70rem) {
+	.hero {
+		align-items: center;
+	}
 }
