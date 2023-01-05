@@ -1,0 +1,49 @@
+/* 0. RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+button, select, textarea, input {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* 1. GENERAL */
+:root {
+	--color-violet: hsl(257, 40%, 49%);
+	--color-magenta: hsl(300, 69%, 71%);
+	--color-netural-100: hsl(0, 0%, 100%);
+
+	--ff-primary: 'Open Sans', sans-serif;
+	--ff-secondary: 'Poppins', sans-serif;
+
+	--fw-regular: 400;
+	--fw-bold: 600;
+}
+
+body {
+	background: var(--color-violet);
+	background-repeat: no-repeat;
+	background-size: cover;
+
+	font-family: var(--ff-primary);
+	color: var(--color-netural-100);
+}

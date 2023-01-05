@@ -32,7 +32,7 @@ So my tools are:
 | :white_check_mark: [Intro component with sign-up form](https://dalebezolli.github.io/frontendmentor.io/intro-component-with-signup-form/index.html) | :black_square_button: Sunnyside agency landing page | :black_square_button: Job listings with filtering | |
 | :white_check_mark: [Four card feature section](https://dalebezolli.github.io/frontendmentor.io/four-card-feature-section/index.html) | :black_square_button: Blogr landing page | :black_square_button: URL shortening API landing page | |
 | :white_check_mark: [Social proof section](https://dalebezolli.github.io/frontendmentor.io/social-proof-section/index.html) | :black_square_button: Testimonials grid section | :black_square_button: URL shortening API landing page | |
-| :black_square_button: Huddle landing page with a single introductory section | :black_square_button: Social media dashboard with theme switcher | |
+| :black_square_button: [Huddle landing page with a single introductory section](https://dalebezolli.github.io/frontendmentor.io/huddle-landing-page-with-single-introductory-section/index.html) | :black_square_button: Social media dashboard with theme switcher | |
 | :black_square_button: Base Apparel coming soon page | :black_square_button: Pricing component with toggle | :black_square_button: Bookmark landing page | |
 | :black_square_button: Ping single column coming soon page | :black_square_button: Project tracking intro component | | |
 | | :black_square_button: Clipboard landing page | | |
