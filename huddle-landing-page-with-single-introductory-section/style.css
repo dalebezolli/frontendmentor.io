@@ -58,7 +58,7 @@ header {
 
 /* 2.1 LOGO */
 .logo {
-	width: clamp(7.5rem, 30%, 13.5rem);
+	width: clamp(7.5rem, 30%, 11.5rem);
 }
 
 /* 3. HERO */
