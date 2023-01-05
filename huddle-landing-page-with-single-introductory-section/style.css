@@ -90,13 +90,13 @@ header {
 }
 
 .hero__paragraph {
-	margin-bottom: 1rem;
+	margin-bottom: 1.5rem;
 }
 
 .hero__register {
 	border: 0;
 	border-radius: 2rem;
-	padding: 1rem 4.125rem;
+	padding: .75rem 6rem;
 
 	color: var(--color-violet);
 	font-family: var(--ff-secondary);
@@ -150,8 +150,8 @@ header {
 		max-width: 22rem;
 	}
 
-	.hero__paragraph {
-		margin-bottom: 1.5rem;
+	.hero__register {
+		padding: 1rem 4.125rem;
 	}
 }
 
