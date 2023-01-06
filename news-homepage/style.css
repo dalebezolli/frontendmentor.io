@@ -208,7 +208,12 @@ main {
 
 .new__content-title {
 	margin-bottom: .75rem;
+	display: block;
+
 	font-size: 1.25rem;
+	font-weight: var(--fw-bold);
+	text-decoration: none;
+	color: var(--color-netural-200);
 
 	cursor: pointer;
 }
@@ -248,12 +253,16 @@ main {
 }
 
 .article__title{
+	margin-bottom: .75rem;
 	display: flex;
 	flex-direction: column;
 
 	font-size: 1.125rem;
 	font-weight: var(--fw-extrabold);
-	margin-bottom: .75rem;
+	text-decoration: none;
+	color: var(--color-netural-900);
+
+	cursor: pointer;
 }
 
 .article:where(:hover, :focus) .article__title {
