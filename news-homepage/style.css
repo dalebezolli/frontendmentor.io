@@ -77,6 +77,7 @@ header {
 	width: clamp(3rem, 9vw, 4rem);
 }
 
+/* 2.1 MAIN NAVIGATION */
 .main-navigation__list {
 	height: 100%;
 	display: none;
@@ -89,9 +90,50 @@ header {
 	text-decoration: none;
 }
 
-.mobile-navigation {
+/* 2.2 MOBILE NAVIGATION */
+.mobile-navigation-button,
+.mobile-main-navigation__button {
+	background-color: var(--color-netural-200);
 	border: 0;
 }
+
+.mobile-main-navigation {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 16rem;
+	height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+
+	padding: 1.5rem;
+	background-color: var(--color-netural-200);
+	box-shadow: 0 0 0 100vw rgba(0, 0, 0, .5);
+}
+
+.mobile-main-navigation[data-open="false"] {
+	display: none;
+}
+
+.mobile-main-navigation__button {
+	align-self: end;
+	margin-bottom: 4.75rem;
+}
+
+.mobile-main-navigation__list {
+	list-style: none;
+}
+
+.mobile-main-navigation__link {
+	display: block;
+
+	padding-block: .625rem;
+	font-size: 1.125rem;
+	text-decoration: none;
+	color: var(--color-netural-900);
+}
+
 
 /* 3. MAIN */
 main {
@@ -222,7 +264,11 @@ main {
 		display: flex;
 	}
 
-	.mobile-navigation {
+	.mobile-main-navigation {
+		display: none;
+	}
+
+	.mobile-navigation-button {
 		display: none;
 	}
 }

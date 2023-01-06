@@ -15,6 +15,9 @@
 		.attribution { font-size: 11px; text-align: center; }
 		.attribution a { color: hsl(228, 45%, 44%); }
 	</style>
+
+	<!-- SCRIPTS -->
+	<script src="./openNavigation.js"></script>
 </head>
 <body>
 
@@ -31,9 +34,24 @@
 				<li class="main-navigation__list-item"><a href="#" class="main-navigation__link">Trending</a></li>
 				<li class="main-navigation__list-item"><a href="#" class="main-navigation__link">Categories</a></li>
 			</ul>
-			<button class="mobile-navigation" data-open="false">
+
+			<button class="mobile-navigation-button" onclick="toggleNavigation()">
 				<svg width="40" height="17" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="M0 0h40v3H0zM0 7h40v3H0zM0 14h40v3H0z"/><path d="M0 0h40v3H0z"/></g></svg>
 			</button>
+
+			<div class="mobile-main-navigation" id="mobile-main-navigation" data-open="false">
+				<button class="mobile-main-navigation__button" onclick="toggleNavigation()">
+					<svg width="32" height="31" xmlns="http://www.w3.org/2000/svg"><g fill="#00001A" fill-rule="evenodd"><path d="m2.919.297 28.284 28.284-2.122 2.122L.797 2.419z"/><path d="M.797 28.581 29.081.297l2.122 2.122L2.919 30.703z"/></g></svg>
+				</button>
+
+				<ul class="mobile-main-navigation__list">
+					<li class="mobile-main-navigation__list-item"><a href="#" class="mobile-main-navigation__link">Home</a></li>
+					<li class="mobile-main-navigation__list-item"><a href="#" class="mobile-main-navigation__link">New</a></li>
+					<li class="mobile-main-navigation__list-item"><a href="#" class="mobile-main-navigation__link">Popular</a></li>
+					<li class="mobile-main-navigation__list-item"><a href="#" class="mobile-main-navigation__link">Trending</a></li>
+					<li class="mobile-main-navigation__list-item"><a href="#" class="mobile-main-navigation__link">Categories</a></li>
+				</ul>
+			</div>
 		</nav>
 	</header>
 
