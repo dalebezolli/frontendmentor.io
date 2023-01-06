@@ -10,7 +10,7 @@ html, body {
 }
 
 body {
-	line-height: 1.5;
+	line-height: 1.6;
 }
 
 button, input, select, textarea {
@@ -49,9 +49,18 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
 	font-family: var(--ff-primary);
-	font-size: .975rem;
+	/* font-size: .975rem; */
+	font-size: .925rem;
 
 	--screen-spacing: 1rem;
+}
+
+h1, h2, h3 {
+	line-height: 1;
+}
+
+p, a {
+	color: var(--color-netural-600);
 }
 
 /* 2. HEADER */
@@ -79,7 +88,6 @@ header {
 	display: block;
 	padding: .5rem 1rem;
 	text-decoration: none;
-	color: var(--color-netural-600);
 }
 
 .mobile-navigation {
@@ -90,6 +98,42 @@ header {
 main {
 	margin-inline: var(--screen-spacing);
 	max-width: 70rem
+}
+
+/* 3.1 BIG ARTICLE */
+.big-article__image {
+	margin-bottom: 1.5rem;
+}
+
+.big-article__image img {
+	max-height: 20rem;
+	width: 100%;
+	object-fit: cover;
+	object-position: top center;
+}
+
+.big-article__title {
+	margin-bottom: 1.25rem;
+
+	font-size: 2.5rem;
+	font-weight: var(--fw-extrabold);
+	color: var(--color-netural-900);
+}
+
+.big-article__paragraph {
+	margin-bottom: 1.5rem;
+}
+
+.big-article__read-more {
+	padding: .75rem 2rem;
+	border: 0;
+	background-color: var(--color-red);
+	
+	text-transform: uppercase;
+	letter-spacing: .5ch;
+	font-size: 1;
+	font-weight: var(--fw-bold);
+	color: var(--color-netural-200);
 }
 
 /* A. MEDIA QUERIES */
@@ -105,6 +149,14 @@ main {
 	.mobile-navigation {
 		display: none;
 	}
+
+	/* A.1.2 MAIN */
+	/* A.1.2.1 BIG ARTICLE */
+	.big-article__image img {
+		max-height: initial;
+		object-fit: cover;
+	}
+
 }
 
 /* A.2 70rem */
