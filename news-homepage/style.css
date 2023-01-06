@@ -94,7 +94,7 @@ header {
 }
 
 /* 3. MAIN */
-main {
+.hero {
 	margin-inline: var(--screen-spacing);
 	max-width: 70rem;
 }
@@ -172,6 +172,10 @@ main {
 @media (min-width: 45rem) {
 
 	/* A.1.1 HEADER */
+	header {
+		margin-block: 5.5rem 3.5rem;
+	}
+
 	.main-navigation__list {
 		display: flex;
 	}
@@ -190,7 +194,7 @@ main {
 	}
 
 	/* A.2.2 MAIN */
-	main {
+	.hero {
 		display: flex;
 		gap: 2rem;
 	}
