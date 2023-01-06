@@ -51,14 +51,14 @@ body {
 main {
 	height: 100vh;
 	padding: 1rem;
+
+	display: grid;
+	place-content: center;
 }
 
 /* ADVICE */
 .advice {
 	max-width: 33.5rem;
-
-	margin-top: clamp(6.5rem, 25vw, 13rem);
-	margin-inline: auto;
 	position: relative;
 
 	padding-inline: clamp(1.5rem, 5vw, 2rem);
