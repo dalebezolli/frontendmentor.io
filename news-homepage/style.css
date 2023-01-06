@@ -275,7 +275,7 @@ main {
 
 	/* A.2.4 NEW ASIDE */
 	.new {
-		min-width: 26vw;
+		min-width: min(22rem, 26vw);
 		align-self: start;
 	}
 }
