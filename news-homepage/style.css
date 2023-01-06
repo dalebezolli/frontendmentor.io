@@ -1,0 +1,48 @@
+/* 0. RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* 1. GENERAL */
+@font-face {
+	font-family: Inter;
+	src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf');
+}
+
+:root {
+	--color-orange: hsl(35, 77%, 62%);
+	--color-red: hsl(5, 85%, 63%);
+
+	--color-netural-200: hsl(36, 100%, 99%);
+	--color-netural-300: hsl(233, 8%, 79%);
+	--color-netural-600: hsl(236, 13%, 42%);
+	--color-netural-900: hsl(240, 100%, 5%);
+
+	--ff-primary: 'Inter', sans-serif;
+	--fw-regular: 400;
+	--fw-bold: 700;
+	--fw-extrabold: 800;
+}
