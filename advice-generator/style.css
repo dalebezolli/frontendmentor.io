@@ -1,0 +1,40 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* GENERAL */
+:root {
+	--color-cyan: hsl(193, 38%, 86%);
+	--color-green: hsl(150, 100%, 66%);
+
+	--color-netural-600: hsl(217, 19%, 38%);
+	--color-netural-700: hsl(217, 19%, 24%);
+	--color-netural-800: hsl(218, 23%, 16%);
+
+	--ff-primary: 'Manrope', sans-serif;
+	--fw-regular: 800;
+}
