@@ -46,3 +46,70 @@ p, h1, h2, h3, h4, h5, h6 {
 	--fw-bold: 700;
 	--fw-extrabold: 800;
 }
+
+body {
+	font-family: var(--ff-primary);
+	font-size: .975rem;
+
+	--screen-spacing: 1rem;
+}
+
+/* 2. HEADER */
+header {
+	margin-inline: var(--screen-spacing);
+	margin-block: 1.5rem;
+	max-width: 70rem;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.logo {
+	width: clamp(3rem, 9vw, 4rem);
+}
+
+.main-navigation__list {
+	height: 100%;
+	display: none;
+	list-style: none;
+}
+
+.main-navigation__link {
+	display: block;
+	padding: .5rem 1rem;
+	text-decoration: none;
+	color: var(--color-netural-600);
+}
+
+.mobile-navigation {
+	border: 0;
+}
+
+/* 3. MAIN */
+main {
+	margin-inline: var(--screen-spacing);
+	max-width: 70rem
+}
+
+/* A. MEDIA QUERIES */
+
+/* A.1 45rem */
+@media (min-width: 45rem) {
+
+	/* A.1.1 HEADER */
+	.main-navigation__list {
+		display: flex;
+	}
+
+	.mobile-navigation {
+		display: none;
+	}
+}
+
+/* A.2 70rem */
+@media (min-width: 70rem) {
+	body {
+		--screen-spacing: auto;
+	}
+}
