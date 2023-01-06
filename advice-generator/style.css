@@ -106,4 +106,9 @@ main {
 	border-radius: 100%;
 
 	background-color: var(--color-green);
+	cursor: pointer;
+}
+
+.advice__next-advice:where(:hover, :focus) {
+	box-shadow: 0 0 2.5rem var(--color-green);
 }
