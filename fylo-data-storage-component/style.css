@@ -1,0 +1,40 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img, picture, svg, video {
+	max-width: 100%;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* GENERAL */
+:root {
+	--color-yellow-to-red-gradient: linear-gradient(hsl(6, 100%, 80%) to hsl(335, 100%, 65%));
+	--color-netural-100: hsl(243, 100%, 93%);
+	--color-netural-400: hsl(229, 7%, 55%);
+	--color-netural-800: hsl(228, 56%, 26%);
+	--color-netural-900: hsl(229, 57%, 11%);
+
+	--ff-primary: 'Raleway', sans-serif;
+
+	--fw-regular: 400;
+	--fw-bold: 700;
+}
