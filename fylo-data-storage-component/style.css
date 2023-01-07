@@ -38,3 +38,48 @@ p, h1, h2, h3, h4, h5, h6 {
 	--fw-regular: 400;
 	--fw-bold: 700;
 }
+
+body {
+	background-color: var(--color-netural-900);
+
+	font-family: var(--ff-primary);
+	color: var(--color-netural-100);
+}
+
+/* MAIN */
+main {
+	padding: 1.5rem;
+}
+
+/* MAIN HEADER */
+.main-header {
+	max-width: 22rem;
+	padding: 2.5rem;
+
+	border-radius: .5rem;
+	border-top-right-radius: 6rem;
+
+	background-color: var(--color-netural-800);
+}
+
+.main-header__logo {
+	margin-bottom: 1.5rem;
+}
+
+.main-header__controls-list {
+	display: flex;
+	gap: 1rem;
+	list-style: none;
+}
+
+.main-header__control-button {
+	width: 3rem;
+	height: 3rem;
+
+	display: grid;
+	place-content: center;
+
+	border: 0;
+	border-radius: .5rem;
+	background-color: var(--color-netural-900);
+}
