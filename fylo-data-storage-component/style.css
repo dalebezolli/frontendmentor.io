@@ -206,7 +206,7 @@ main > * {
 @media (min-width: 40rem) {
 	body {
 		background-image: url("./images/bg-desktop.png");
-		background-size: cover;
+		background-size: 100% auto;
 		background-position-y: 50vh;
 	}
 }
