@@ -46,6 +46,9 @@ body {
 	place-content: center;
 
 	background-color: var(--color-netural-900);
+	background-image: url("./images/bg-mobile.png");
+	background-repeat: no-repeat;
+	background-size: cover;
 
 	font-family: var(--ff-primary);
 	font-size: .9375rem;
@@ -200,6 +203,14 @@ main > * {
 }
 
 /* MEDIA QUERY */
+@media (min-width: 40rem) {
+	body {
+		background-image: url("./images/bg-desktop.png");
+		background-size: cover;
+		background-position-y: 50vh;
+	}
+}
+
 @media (min-width: 45rem) {
 	main {
 		margin-inline: auto;
@@ -251,5 +262,4 @@ main > * {
 		border-color: transparent;
 		border-right-color: var(--color-netural-100);
 	}
-
 }
