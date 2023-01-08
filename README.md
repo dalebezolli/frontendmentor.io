@@ -16,12 +16,12 @@ So my tools are:
 
 ## Challenges
 
-| Newbie `15/17` | Junior `2/25` | Intermediate `0/14` | Advanced `0/2` |
+| Newbie `15/17` | Junior `3/25` | Intermediate `0/14` | Advanced `0/2` |
 |:-------|:-------|:-------------|:---------|
 | :white_check_mark: [Product Card](https://dalebezolli.github.io/frontendmentor.io/product-card/index.html) | :white_check_mark: [Advice generator app](https://dalebezolli.github.io/frontendmentor.io/advice-generator/index.html) | :black_square_button: Todo app | :black_square_button: Rock, Paper, Scissors game |
 | :white_check_mark: [Rating Card](https://dalebezolli.github.io/frontendmentor.io/rating-card/index.html) | :black_square_button: Expenses chart component | :black_square_button: Easybank landing page | :black_square_button: REST Countries API with color theme switcher |
 | :white_check_mark: [Qr Code Card](https://dalebezolli.github.io/frontendmentor.io/qr-code-card/index.html) | :black_square_button: Coding bootcamp testimonials slider | :black_square_button: Manage landing page | |
-| :white_check_mark: [NFT Preview Card](https://dalebezolli.github.io/frontendmentor.io/nft-preview-card/index.html) | :black_square_button: [Fylo data storage component](https://dalebezolli.github.io/frontendmentor.io/fylo-data-storage-component/index.html) | :black_square_button: IP Address Tracker | |
+| :white_check_mark: [NFT Preview Card](https://dalebezolli.github.io/frontendmentor.io/nft-preview-card/index.html) | :white_check_mark: [Fylo data storage component](https://dalebezolli.github.io/frontendmentor.io/fylo-data-storage-component/index.html) | :black_square_button: IP Address Tracker | |
 | :white_check_mark: [Order Summary Card](https://dalebezolli.github.io/frontendmentor.io/order-summary-card/index.html) | :black_square_button: Notifications page | :black_square_button: Launch countdown timer | |
 | :white_check_mark: [Status Preview Card](https://dalebezolli.github.io/frontendmentor.io/stats-preview-card/index.html) | :black_square_button: Interactive pricing component | :black_square_button: Multi-step form | |
 | :white_check_mark: [Three Column Preview Card](https://dalebezolli.github.io/frontendmentor.io/three-column-preview-card/index.html) | :black_square_button: Time tracking dashboard | :black_square_button: Interactive comments section | |
