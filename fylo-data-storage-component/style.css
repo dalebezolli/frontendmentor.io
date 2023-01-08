@@ -40,6 +40,11 @@ p, h1, h2, h3, h4, h5, h6 {
 }
 
 body {
+	height: 100vh;
+
+	display: grid;
+	place-content: center;
+
 	background-color: var(--color-netural-900);
 
 	font-family: var(--ff-primary);
@@ -198,7 +203,7 @@ main > * {
 @media (min-width: 45rem) {
 	main {
 		margin-inline: auto;
-		max-width: 60rem;
+		width: min(100vw, 60rem);
 		
 		display: flex;
 		gap: 2rem;
