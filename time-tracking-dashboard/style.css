@@ -1,0 +1,49 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	letter-spacing: 1.5;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* GENERAL */
+:root {
+	--color-primary: hsl(246, 80%, 60%); 
+	--color-work-section: hsl(15, 100%, 70%);
+	--color-play-section: hsl(195, 74%, 62%);
+	--color-study-section: hsl(348, 100%, 68%);
+	--color-exercise-section: hsl(145, 58%, 55%);
+	--color-social-section: hsl(264, 64%, 52%);
+	--color-self-care-section: hsl(43, 84%, 65%);
+
+	--color-netural-200: hsl(236, 100%, 87%);
+	--color-netural-400: hsl(235, 45%, 61%);
+	--color-netural-800: hsl(235, 46%, 20%);
+	--color-netural-900: hsl(226, 43%, 10%);
+
+	--ff-primary: 'Rubik', sans-serif;
+
+	--fw-light: 300;
+	--fw-regular: 400;
+	--fw-bold: 500;
+}

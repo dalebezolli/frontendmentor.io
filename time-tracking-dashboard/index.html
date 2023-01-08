@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+	<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+	
+	<title>Frontend Mentor | Time tracking dashboard</title>
+
+	<!-- FONTS -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet"> 
+
+	<!-- STYLES -->
+	<link rel="stylesheet" href="style.css">
+	<style>
+		.attribution { font-size: 11px; text-align: center; }
+		.attribution a { color: hsl(228, 45%, 44%); }
+	</style>
+</head>
+<body>
+
+	<main>
+		<header class="user-controller">
+			<div class="user-details">
+				<img src="./images/image-jeremy.png" alt="jeremy's profile" aria-hidden="true">
+				<h1 class="user-details__name"><span class="user-details__name-label">Report for</span> Jeremy Robson</h1>
+			</div>
+
+			<nav class="timeframe-controls">
+				<ul class="timeframe-controls__list">
+					<li class="timeframe-controls__list-item">
+						<button class="timeframe-controls__list-button">Daily</button>
+					</li>
+
+					<li class="timeframe-controls__list-item">
+						<button class="timeframe-controls__list-button">Weekly</button>
+					</li>
+
+					<li class="timeframe-controls__list-item">
+						<button class="timeframe-controls__list-button">Monthly</button>
+					</li>
+				</ul>
+			</nav>
+		</header>
+
+		<article class="user-statistics">
+
+			<section class="stat-card">
+				<div class="stat-card__content">
+
+					<header class="stat-card__header">
+						<h2 class="stat-card__stat-name">Work</h2>
+						<button class="stat-card__options">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+						</button>
+					</header>
+
+					<div class="daily-stats-container">
+						<p class="stat-card__current-stat" id="stat-current">5hrs</p>
+						<p class="stat-card__previous-stat">
+							Last 
+							<span id="stat-timeframe-value">Day</span> 
+							- 
+							<span id="stat-previous">7hrs</span>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="stat-card">
+				<div class="stat-card__content">
+
+					<header class="stat-card__header">
+						<h2 class="stat-card__stat-name">Play</h2>
+						<button class="stat-card__options">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+						</button>
+					</header>
+
+					<div class="daily-stats-container">
+						<p class="stat-card__current-stat" id="stat-current">1hr</p>
+						<p class="stat-card__previous-stat">
+							Last 
+							<span id="stat-timeframe-value">Day</span> 
+							- 
+							<span id="stat-previous">2hrs</span>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="stat-card">
+				<div class="stat-card__content">
+
+					<header class="stat-card__header">
+						<h2 class="stat-card__stat-name">Study</h2>
+						<button class="stat-card__options">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+						</button>
+					</header>
+
+					<div class="daily-stats-container">
+						<p class="stat-card__current-stat" id="stat-current">0hrs</p>
+						<p class="stat-card__previous-stat">
+							Last 
+							<span id="stat-timeframe-value">Day</span> 
+							- 
+							<span id="stat-previous">1hr</span>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="stat-card">
+				<div class="stat-card__content">
+
+					<header class="stat-card__header">
+						<h2 class="stat-card__stat-name">Exercise</h2>
+						<button class="stat-card__options">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+						</button>
+					</header>
+
+					<div class="daily-stats-container">
+						<p class="stat-card__current-stat" id="stat-current">1hr</p>
+						<p class="stat-card__previous-stat">
+							Last 
+							<span id="stat-timeframe-value">Day</span> 
+							- 
+							<span id="stat-previous">1hr</span>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="stat-card">
+				<div class="stat-card__content">
+
+					<header class="stat-card__header">
+						<h2 class="stat-card__stat-name">Self Care</h2>
+						<button class="stat-card__options">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+						</button>
+					</header>
+
+					<div class="daily-stats-container">
+						<p class="stat-card__current-stat" id="stat-current">0hrs</p>
+						<p class="stat-card__previous-stat">
+							Last 
+							<span id="stat-timeframe-value">Day</span> 
+							- 
+							<span id="stat-previous">1hr</span>
+						</p>
+					</div>
+				</div>
+			</section>
+
+			<section class="stat-card">
+				<div class="stat-card__content">
+
+					<header class="stat-card__header">
+						<h2 class="stat-card__stat-name">Social</h2>
+						<button class="stat-card__options">
+							<svg width="21" height="5" xmlns="http://www.w3.org/2000/svg"><path d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z" fill="#BBC0FF" fill-rule="evenodd"/></svg>
+						</button>
+					</header>
+
+					<div class="daily-stats-container">
+						<p class="stat-card__current-stat" id="stat-current">1hr</p>
+						<p class="stat-card__previous-stat">
+							Last 
+							<span id="stat-timeframe-value">Day</span> 
+							- 
+							<span id="stat-previous">3hrs</span>
+						</p>
+					</div>
+				</div>
+			</section>
+
+		</article>
+	</main>
+
+	<footer>
+		<div class="attribution">
+			Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+			Coded by <a href="github.com/dalebezolli">Dale Bezolli</a>.
+		</div>
+	</footer>
+</body>
+</html>
