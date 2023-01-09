@@ -128,6 +128,11 @@ main {
 	color: var(--color-netural-400);
 }
 
+.timeframe-controls__list-button:where(:hover, [data-selected="true"]) {
+	color: var(--color-netural-100);
+	cursor: pointer;
+}
+
 /* STAT CARD */
 .user-statistics {
 	margin-inline: auto;
@@ -186,32 +191,32 @@ main {
 }
 
 /* SPECIFIC STAT CARDS */
-.stat-card[data-card="work"] {
+.stat-card[data-type="work"] {
 	background-color: var(--color-work-section);
 	background-image: url("./images/icon-work.svg");
 }
 
-.stat-card[data-card="play"]  {
+.stat-card[data-type="play"]  {
 	background-color: var(--color-play-section);
 	background-image: url("./images/icon-play.svg");
 }
 
-.stat-card[data-card="study"]  {
+.stat-card[data-type="study"]  {
 	background-color: var(--color-study-section);
 	background-image: url("./images/icon-study.svg");
 }
 
-.stat-card[data-card="exercise"]  {
+.stat-card[data-type="exercise"]  {
 	background-color: var(--color-exercise-section);
 	background-image: url("./images/icon-exercise.svg");
 }
 
-.stat-card[data-card="self-care"]  {
+.stat-card[data-type="self-care"]  {
 	background-color: var(--color-self-care-section);
 	background-image: url("./images/icon-self-care.svg");
 }
 
-.stat-card[data-card="social"]  {
+.stat-card[data-type="social"]  {
 	background-color: var(--color-social-section);
 	background-image: url("./images/icon-social.svg");
 }

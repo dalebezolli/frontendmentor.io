@@ -30,17 +30,17 @@
 			</div>
 
 			<nav class="timeframe-controls">
-				<ul class="timeframe-controls__list">
+				<ul class="timeframe-controls__list" id="timeframe-controls-list" onclick="changeTimeframe(event)">
 					<li class="timeframe-controls__list-item">
-						<button class="timeframe-controls__list-button">Daily</button>
+						<button class="timeframe-controls__list-button" data-selected="false">Daily</button>
 					</li>
 
 					<li class="timeframe-controls__list-item">
-						<button class="timeframe-controls__list-button">Weekly</button>
+						<button class="timeframe-controls__list-button" data-selected="true">Weekly</button>
 					</li>
 
 					<li class="timeframe-controls__list-item">
-						<button class="timeframe-controls__list-button">Monthly</button>
+						<button class="timeframe-controls__list-button" data-selected="false">Monthly</button>
 					</li>
 				</ul>
 			</nav>
@@ -48,7 +48,7 @@
 
 		<article class="user-statistics">
 
-			<section class="stat-card" data-card="work">
+			<section class="stat-card" data-type="work">
 				<div class="stat-card__content">
 
 					<header class="stat-card__header">
@@ -59,17 +59,17 @@
 					</header>
 
 					<div class="stat-card__details-container">
-						<p class="stat-card__current-stat" id="stat-current">5hrs</p>
+						<p class="stat-card__current-stat">5hrs</p>
 						<p class="stat-card__previous-stat"> 
-							<span id="stat-timeframe-value">Yesterday</span> 
+							<span class=stat-card__previous-stat-label>Yesterday</span> 
 							- 
-							<span id="stat-previous">7hrs</span>
+							<span class=stat-card__previous-stat-value>7hrs</span>
 						</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="stat-card" data-card="play">
+			<section class="stat-card" data-type="play">
 				<div class="stat-card__content">
 
 					<header class="stat-card__header">
@@ -80,17 +80,17 @@
 					</header>
 
 					<div class="stat-card__details-container">
-						<p class="stat-card__current-stat" id="stat-current">1hr</p>
+						<p class="stat-card__current-stat">1hr</p>
 						<p class="stat-card__previous-stat"> 
-							<span id="stat-timeframe-value">Yesterday</span> 
+							<span class=stat-card__previous-stat-label>Yesterday</span> 
 							- 
-							<span id="stat-previous">2hrs</span>
+							<span class=stat-card__previous-stat-value>2hrs</span>
 						</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="stat-card" data-card="study">
+			<section class="stat-card" data-type="study">
 				<div class="stat-card__content">
 
 					<header class="stat-card__header">
@@ -101,17 +101,17 @@
 					</header>
 
 					<div class="stat-card__details-container">
-						<p class="stat-card__current-stat" id="stat-current">0hrs</p>
+						<p class="stat-card__current-stat">0hrs</p>
 						<p class="stat-card__previous-stat"> 
-							<span id="stat-timeframe-value">Yesterday</span> 
+							<span class=stat-card__previous-stat-label>Yesterday</span> 
 							- 
-							<span id="stat-previous">1hr</span>
+							<span class=stat-card__previous-stat-value>1hr</span>
 						</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="stat-card" data-card="exercise">
+			<section class="stat-card" data-type="exercise">
 				<div class="stat-card__content">
 
 					<header class="stat-card__header">
@@ -122,17 +122,17 @@
 					</header>
 
 					<div class="stat-card__details-container">
-						<p class="stat-card__current-stat" id="stat-current">1hr</p>
+						<p class="stat-card__current-stat">1hr</p>
 						<p class="stat-card__previous-stat">
-							<span id="stat-timeframe-value">Yesterday</span> 
+							<span class=stat-card__previous-stat-label>Yesterday</span> 
 							- 
-							<span id="stat-previous">1hr</span>
+							<span class=stat-card__previous-stat-value>1hr</span>
 						</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="stat-card" data-card="self-care">
+			<section class="stat-card" data-type="self-care">
 				<div class="stat-card__content">
 
 					<header class="stat-card__header">
@@ -143,17 +143,17 @@
 					</header>
 
 					<div class="stat-card__details-container">
-						<p class="stat-card__current-stat" id="stat-current">0hrs</p>
+						<p class="stat-card__current-stat">0hrs</p>
 						<p class="stat-card__previous-stat">
-							<span id="stat-timeframe-value">Yesterday</span> 
+							<span class=stat-card__previous-stat-label>Yesterday</span> 
 							- 
-							<span id="stat-previous">1hr</span>
+							<span class=stat-card__previous-stat-value>1hr</span>
 						</p>
 					</div>
 				</div>
 			</section>
 
-			<section class="stat-card" data-card="social">
+			<section class="stat-card" data-type="social">
 				<div class="stat-card__content">
 
 					<header class="stat-card__header">
@@ -164,11 +164,11 @@
 					</header>
 
 					<div class="stat-card__details-container">
-						<p class="stat-card__current-stat" id="stat-current">1hr</p>
+						<p class="stat-card__current-stat">1hr</p>
 						<p class="stat-card__previous-stat">
-							<span id="stat-timeframe-value">Yesterday</span> 
+							<span class=stat-card__previous-stat-label>Yesterday</span> 
 							- 
-							<span id="stat-previous">3hrs</span>
+							<span class=stat-card__previous-stat-value>3hrs</span>
 						</p>
 					</div>
 				</div>
@@ -184,5 +184,8 @@
 			Coded by <a href="github.com/dalebezolli">Dale Bezolli</a>.
 		</div>
 	</footer>
+
+
+	<script src="dashboard.js"></script>
 </body>
 </html>
