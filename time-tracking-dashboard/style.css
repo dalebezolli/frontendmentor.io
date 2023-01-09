@@ -160,6 +160,11 @@ main {
 	background-color: var(--color-netural-800);
 }
 
+.stat-card:where(:hover) .stat-card__content {
+	background-color: var(--color-primary);
+	cursor: pointer;
+}
+
 .stat-card__header {
 	margin-bottom: .25rem;
 
@@ -176,6 +181,13 @@ main {
 .stat-card__options {
 	border: 0;
 	background-color: transparent;
+
+	fill: var(--color-netural-200);
+	cursor: pointer;
+}
+
+.stat-card__options:where(:hover, :focus) svg {
+	fill: var(--color-netural-100);
 }
 
 .stat-card__details-container {
