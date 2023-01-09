@@ -67,6 +67,10 @@ main {
 
 /* USER CONTROLLER */
 .user-controller {
+	margin-inline: auto;
+	width: 100%;
+	max-width: 20.5rem;
+
 	border-radius: 1rem;
 	background-color: var(--color-netural-800);
 }
@@ -125,6 +129,10 @@ main {
 
 /* STAT CARD */
 .user-statistics {
+	margin-inline: auto;
+	width: 100%;
+	max-width: 20.5rem;
+
 	display: flex;
 	gap: 1.5rem;
 	flex-direction: column;
@@ -205,4 +213,58 @@ main {
 .stat-card[data-card="social"]  {
 	background-color: var(--color-social-section);
 	background-image: url("./images/icon-social.svg");
+}
+
+/* MEDIA QUERIES */
+@media (min-width: 40rem) {
+	/* GENERAL */
+	main {
+		flex-direction: row;
+		justify-content: center;
+	}
+
+
+	/* USER CONTROLLER */
+	.user-controller {
+		margin-inline: 0;
+		max-width: 16rem;
+
+		position: sticky;
+		top: 0;
+		align-self: flex-start;
+	}
+
+	.user-details {
+		padding-bottom: 5rem;	
+
+		gap: 2.5rem;
+		flex-direction: column;
+		align-items: flex-start;
+	}
+
+	.user-details__image {
+		width: 5.25rem;
+	}
+
+	.user-details__name {
+		font-size: 2.5rem;
+	}
+
+	.timeframe-controls {
+		padding-block: 1.75rem 2rem;
+	}
+
+	.timeframe-controls__list {
+		flex-direction: column;
+		gap: 1.25rem;
+	}
+
+	.timeframe-controls__list-button {
+		padding-block: 0;
+	}
+
+	/* STAT CARD */
+	.user-statistics {
+		margin-inline: 0;
+	}
 }
