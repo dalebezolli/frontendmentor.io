@@ -36,6 +36,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	--color-social-section: hsl(264, 64%, 52%);
 	--color-self-care-section: hsl(43, 84%, 65%);
 
+	--color-netural-100: hsl(0, 0%, 100%);
 	--color-netural-200: hsl(236, 100%, 87%);
 	--color-netural-400: hsl(235, 45%, 61%);
 	--color-netural-800: hsl(235, 46%, 20%);
@@ -46,4 +47,74 @@ p, h1, h2, h3, h4, h5, h6 {
 	--fw-light: 300;
 	--fw-regular: 400;
 	--fw-bold: 500;
+}
+
+/* GENERAL */
+body {
+	background-color: var(--color-netural-900);
+
+	font-family: var(--ff-primary);
+	color: var(--color-netural-200);
+}
+
+main {
+	padding-inline: 1.5rem;
+}
+
+/* USER CONTROLLER */
+.user-controller {
+	border-radius: 1rem;
+	background-color: var(--color-netural-800);
+}
+
+.user-details {
+	padding: 2rem 1.75rem;
+
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+
+	border-radius: 1rem;
+	background-color: var(--color-primary);
+}
+
+.user-details__image {
+	width: 4.25rem;
+
+	border-radius: 100%;
+	border: 3px solid var(--color-netural-100);
+}
+
+.user-details__name {
+	display: flex;
+	gap: .25rem;
+	flex-direction: column;
+
+	font-weight: var(--fw-light);
+	font-size: 1.5rem;
+	color: var(--color-netural-100);
+}
+
+.user-details__name-label {
+	font-size: 1rem;
+	color: var(--color-netural-200);
+}
+
+.timeframe-controls {
+	padding-inline: 1.75rem;
+}
+
+.timeframe-controls__list {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+}
+
+.timeframe-controls__list-button {
+	padding-block: 1.25em;
+	border: 0;
+	background-color: transparent;
+
+	font-size: 1.125rem;
+	color: var(--color-netural-400);
 }
