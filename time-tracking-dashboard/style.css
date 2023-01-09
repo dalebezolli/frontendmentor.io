@@ -275,20 +275,15 @@ main {
 	}
 
 	.user-statistics {
-		gap: 2rem;
-		align-self: flex-start;
+		display: grid;
+		grid-template-columns: repeat(2, 16rem);
+		align-content: start;
 
-		flex-direction: row;
-		flex-wrap: wrap;
-		max-width: 34rem;
+		width: 100%;
+		max-width: fit-content;
 	}
 
 	.stat-card {
-		align-self: flex-start;
-		flex: 1;
-		flex-basis: 100%;
-		max-width: 16rem;
-
 		padding-top: 3rem;
 	}
 
@@ -311,6 +306,6 @@ main {
 
 @media (min-width: 73rem) {
 	.user-statistics {
-		max-width: 52rem;
+		grid-template-columns: repeat(3, 16rem);
 	}
 }
