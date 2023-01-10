@@ -1,0 +1,49 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* GENERAL */
+:root {
+	--color-red-200: hsl(7, 99%, 70%);
+	--color-yellow-400: hsl(51, 100%, 49%);
+	--color-cyan-400: hsl(168, 34%, 41%);
+	--color-cyan-700: hsl(167, 40%, 24%);
+	--color-blue-700: hsl(198, 62%, 26%);
+
+	--color-netural-100: hsl(0, 0%, 100%);
+	--color-netural-300: hsl(210, 4%, 67%);
+	--color-netural-400: hsl(232, 10%, 55%);
+	--color-neutral-600: hsl(213, 9%, 39%);
+	--color-neutral-800: hsl(212, 27%, 19%);
+
+	--ff-primary: 'Barlow', sans-serif;
+	--ff-secondary: 'Fraunces', serif;
+
+	--fw-primary-regular: 600;
+	--fw-secondary-regular: 700;
+	--fw-secondary-bold: 900;
+}
