@@ -32,6 +32,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	--color-yellow-400: hsl(51, 100%, 49%);
 	--color-cyan-400: hsl(168, 34%, 41%);
 	--color-cyan-700: hsl(167, 40%, 24%);
+	--color-blue-400: hsl(200, 100%, 62%);
 	--color-blue-700: hsl(198, 62%, 26%);
 
 	--color-netural-100: hsl(0, 0%, 100%);
@@ -56,11 +57,18 @@ body {
 	color: var(--color-netural-100);
 }
 
+h1, h2, h3 {
+	font-family: var(--ff-secondary);
+}
+
 /* MAIN HEADER */
 .main-header {
+	margin-inline: auto;
+	max-width: 90rem;
 	padding-top: 1.625rem;
 	padding-inline: 1.5rem;
 
+	z-index: 10;
 	position: absolute;
 	top: 0;
 	inset-inline: 0;
@@ -152,8 +160,61 @@ body {
 	color: var(--color-netural-800);
 }
 
+/* MAIN CONTENT */
+/* HERO */
+.hero {
+	height: 40rem;
+	position: relative;
+
+	background-color: var(--color-blue-400);
+	background-image: url("./images/mobile/image-header.jpg");
+	background-repeat: no-repeat;
+	background-position: center bottom;
+	background-size: cover;
+}
+
+.hero .container {
+	height: 100%;
+}
+
+.hero__content {
+	margin-inline: auto;
+	max-width: 90rem;
+	height: 100%;
+
+	display: flex;
+	flex-direction: column;
+	gap: 3rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.hero__title {
+	padding-top: 1rem;
+
+	font-size: 2.5rem;
+	font-weight: var(--fw-secondary-bold);
+	text-transform: uppercase;
+	line-height: 1.25;
+	letter-spacing: .2ch;
+}
+
+/* HELPERS */
+.container {
+	text-align: center;
+	padding-inline: 2rem;
+}
+
 /* MEDIA QUERIES */
+@media (min-width: 32rem) {
+	.hero {
+		background-image: url("./images/desktop/image-header.jpg");
+		background-size: 160%;
+	}
+}
+
 @media (min-width: 48rem)  {
+	/* MAIN HEADER */
 	.main-header {
 		padding-inline: 2.5rem;
 	}
@@ -163,6 +224,7 @@ body {
 		height: auto;
 	}
 
+	/* MAIN NAVIGATION */
 	.main-nav__mobile-button {
 		display: none;
 	}
@@ -201,5 +263,17 @@ body {
 		padding: 1.125em 2.25em;
 
 		background-color: var(--color-netural-100);
+	}
+
+	/* MAIN */
+	/* HERO */
+	.hero {
+		height: min(100vh, 43.5rem);
+		background-size: 63rem;
+	}
+
+	.hero__title {
+		padding-top: 0;
+		font-size: 3.375rem;
 	}
 }
