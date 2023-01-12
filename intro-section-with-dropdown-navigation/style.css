@@ -1,0 +1,39 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* GENERAL */
+:root {
+	--color-netural-100: hsl(0, 0%, 98%);
+	--color-netural-500: hsl(0, 0%, 41%);
+	--color-netural-900: hsl(0, 0%, 8%);
+
+	--ff-primary: 'Epilogue', sans-serif;
+
+	--fw-regular: 500;
+	--fw-bold: 700;
+}
