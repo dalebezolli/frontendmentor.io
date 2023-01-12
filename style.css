@@ -1,0 +1,95 @@
+/* RESET */
+*, *::before, *::after {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	min-height: 100%;
+}
+
+body {
+	line-height: 1.5;
+}
+
+img, picture, svg, video {
+	display: block;
+	max-width: 100%;
+}
+
+button, input, select, textarea {
+	font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+	overflow-wrap: break-word;
+}
+
+/* GENERAL */
+:root {
+	--color-primary: hsl(183, 100%, 35%);
+
+	--color-netural-100: hsl(180, 6%, 97%);
+	--color-netural-300: hsl(216, 3%, 68%);
+	--color-netural-700: hsl(217, 10%, 25%);
+	--color-netural-800: hsl(216, 18%, 16%);
+	--color-netural-900: hsl(216, 18%, 5%);
+
+	--ff-primary: 'Poppins', sans-serif;
+}
+
+body {
+	background-color: var(--color-netural-900);
+	font-family: var(--ff-primary);
+}
+
+body, a {
+	color: var(--color-netural-300);
+}
+
+a {
+	text-decoration: none;
+}
+
+h1, h2, h3 {
+	color: var(--color-netural-100);
+}
+
+main {
+	margin-inline: auto;
+	max-width: 70rem;
+}
+
+/* CHALLENGE SECTION */
+.challenges__title {
+	margin-top: 2rem;
+	text-align: center;
+}
+
+.challenges__container {
+	display: flex;
+	justify-content: center;
+	gap: 2rem;
+
+	margin-top: 4rem;
+}
+
+.challenge-section {
+	padding: 2rem;
+
+	border-radius: 1rem;
+	background-color: var(--color-netural-800);
+}
+
+.challenge-section__title {
+	margin-bottom: 1rem;
+}
+
+.challenge-section__list {
+	padding-left: 1rem;
+}
+
+.challenge-section__link:where(:hover, :focus) {
+	color: var(--color-primary);
+}

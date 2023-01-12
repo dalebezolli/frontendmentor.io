@@ -5,20 +5,26 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Dale Bezolli | FrontendMentor Challenges</title>
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+
+	<link rel="stylesheet" href="style.css">
 </head>
 <body>
 	
 	<main>
+		<article class="challenges">
+			<h1 class="challenges__title">FrontendMentor Challenges</h1>
+			<div id="challenges" class="challenges__container">
 
-		<article id="challenges">
-			<h1>FrontendMentor Challenges</h1>
+			</div>
 		</article>
-
 	</main>
 
 	<script>
 		const challengesContainer = document.querySelector('#challenges');
-		document.title = screen.width + " " + screen.height;
 
 		const list = {
 			'Newbie' : [
@@ -49,29 +55,32 @@
 
 		for(let key of Object.keys(list)) {
 			const challengeSection = document.createElement('section');
+			challengeSection.classList.add('challenge-section');
+
 			const challengeSectionTitle = document.createElement('h2');
+			challengeSectionTitle.classList.add('challenge-section__title')
 			challengeSectionTitle.textContent = key;
-			const challengeList = document.createElement('ul');
+			const challengeList = document.createElement('ol');
+			challengeList.classList.add('challenge-section__list');
 
 			challengeSection.appendChild(challengeSectionTitle);
 			challengeSection.appendChild(challengeList);
 			
-			for(let item of list[key]) {
+			list[key].forEach((item) => {
 				const challengeListItem = document.createElement('li');
+				challengeListItem.classList.add('challenge-section__list-item');
+				
 				const challengeLink = document.createElement('a');
+				challengeLink.classList.add('challenge-section__link');
 				challengeLink.href = `${item}\\index.html`;
-				challengeLink.textContent = item;
+				challengeLink.textContent = item.replaceAll('-', ' ');
 
 				challengeListItem.appendChild(challengeLink);
 				challengeList.appendChild(challengeListItem);
-			}
+			});
 
 			challengesContainer.appendChild(challengeSection);
 		}
-
-		
-
-
 	</script>
 
 </body>
