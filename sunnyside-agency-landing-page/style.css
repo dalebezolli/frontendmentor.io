@@ -33,6 +33,7 @@ p, h1, h2, h3, h4, h5, h6 {
 	--color-cyan-200: hsl(167, 44%, 70%);
 	--color-cyan-400: hsl(168, 34%, 41%);
 	--color-cyan-700: hsl(167, 40%, 24%);
+	--color-blue-200: hsl(199, 100%, 71%);
 	--color-blue-400: hsl(200, 100%, 62%);
 	--color-blue-700: hsl(198, 62%, 26%);
 
@@ -306,6 +307,11 @@ h1, h2, h3 {
 	background-color: var(--color-red-200);
 }
 
+.info-section__more:where(:hover, :focus)::before  {
+	opacity: 1;
+	cursor: pointer;
+}
+
 /* TESTIMONIALS */
 .testimonials {
 	padding-block: clamp(4rem, 15%, 10rem);
@@ -428,6 +434,15 @@ h1, h2, h3 {
 	list-style: none;
 }
 
+.socials__list-link svg {
+	fill: var(--color-cyan-700);
+}
+
+:is(.footer-nav__list-link, .socials__list-link svg):where(:hover, :focus) {
+	color: var(--color-netural-100);
+	fill: var(--color-netural-100);
+}
+
 /* HELPERS */
 .container {
 	text-align: center;
@@ -497,6 +512,11 @@ h1, h2, h3 {
 		padding: 1.125em 2.25em;
 
 		background-color: var(--color-netural-100);
+	}
+
+	.main-nav__link-button:where(:hover, :focus) {
+		background-color: var(--color-blue-200);
+		color: var(--color-netural-100);
 	}
 
 	/* MAIN */
