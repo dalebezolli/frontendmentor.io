@@ -52,6 +52,7 @@ body, button, a {
 	display: flex;
 	gap: 4rem;
 	justify-content: space-between;
+	align-items: center;
 
 	padding-inline: 2.75rem;
 	margin-top: 2rem;
@@ -98,6 +99,14 @@ body, button, a {
 	cursor: pointer;
 }
 
+.site-nav__dropdown-toggle:where(:hover, [data-open="true"]) {
+	color: var(--color-netural-900);
+}
+
+.site-nav__dropdown-toggle:where(:hover, [data-open="true"]) svg {
+	stroke: var(--color-netural-900);
+}
+
 .site-nav__dropdown-toggle svg:last-child {
 	display: none;
 }
@@ -114,6 +123,10 @@ body, button, a {
 	text-decoration: none;
 }
 
+.site-nav__links-list-link:where(:hover, :focus) {
+	color: var(--color-netural-900);
+}
+
 /* USER NAV */
 .site-nav__user-list {
 	display: flex;
@@ -126,11 +139,20 @@ body, button, a {
 	text-decoration: none;
 }
 
+.site-nav__user-list-link:where(:hover, :focus) {
+	color: var(--color-netural-900);
+}
+
 .site-nav__user-list-link-button {
 	padding: .75rem 1.3275rem;
 
 	border-radius: .875rem;
 	border: 1px solid var(--color-netural-500);
+}
+
+.site-nav__user-list-link-button:where(:hover, :focus) {
+	color: var(--color-netural-900);
+	border-color: var(--color-netural-900);
 }
 
 /* FEATURES LIST */
@@ -154,6 +176,10 @@ body, button, a {
 	gap: 1rem;
 
 	text-decoration: none;
+}
+
+.features-list__link:where(:hover, :focus) {
+	color: var(--color-netural-900);
 }
 
 .features-list__link svg {
@@ -252,6 +278,7 @@ body, button, a {
 	}
 
 	.site-nav__links-list {
+		align-items: center;
 		font-size: inherit;
 	}
 
