@@ -71,6 +71,8 @@ body, button, a {
 .site-nav__mobile-menu-toggle {
 	border: 0;
 	background-color: var(--color-netural-100);
+
+	cursor: pointer;
 }
 
 .navigations {
@@ -97,6 +99,10 @@ body, button, a {
 	background-color: var(--color-netural-100);
 
 	cursor: pointer;
+}
+
+.site-nav__dropdown-toggle svg {
+	stroke: var(--color-netural-500);
 }
 
 .site-nav__dropdown-toggle:where(:hover, [data-open="true"]) {
