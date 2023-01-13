@@ -295,8 +295,12 @@ body, button, a {
 @media (min-width: 54rem) {
 	/* SITE HEADER */
 	.site-header {
-		justify-content: initial;
+
+		margin-inline: auto;
 		padding-inline: 2.75rem;
+		max-width: 79.5rem;
+
+		justify-content: initial;
 	}
 
 	/* SITE NAVIGATION */
